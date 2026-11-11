@@ -1,11 +1,11 @@
-# 01 – Engineering Design Basis (Rev B, for Project Leader review)
+# 01 – Engineering Design Basis (Rev C, for Project Leader review)
 
 **Project:** Design and Scale-Up of a Closed Ferrochrome Submerged Arc Furnace (SAF) from 55 MW to 60 MW using 65 MVA Transformers and Optimised Electrode Geometry
 **Discipline:** BEngTech Metallurgical Engineering – design assignment
-**Status:** DRAFT Rev B – HOLD POINT 1 (partially cleared: Q1, Q2 answered). No detailed calculations proceed until the Project Leader has reviewed this document and answered the decision questions in Section 10.
+**Status:** DRAFT Rev C – HOLD POINT 1 (partially cleared: Q1, Q1b, Q2, Q5, Q6 answered). No detailed calculations proceed until the Project Leader has reviewed this document and answered the decision questions in Section 10.
 **Date:** 2026-11-11
 
-**Revision log:** Rev A – first issue. Rev B – Project Leader confirmed Q1 (65 MVA is the **total** installed transformer rating) and Q2 (**uprate of an existing furnace**). A-03 and A-13 are now specified items S-07 and S-08. Q3–Q8 remain open.
+**Revision log:** Rev A – first issue. Rev B – Project Leader confirmed Q1 (65 MVA is the **total** installed transformer rating) and Q2 (**uprate of an existing furnace**). A-03 and A-13 are now specified items S-07 and S-08. Q3–Q8 remain open. Rev C – Project Leader confirmed the 55 MW furnace **exists** (Q1b) and that the scenario is a **lecturer-defined hypothetical with no real plant data** (Q5/Q6). All baseline values are therefore reference-furnace values derived from literature and first principles. Q3, Q4, Q7 and Q8 remain open.
 
 > **Data integrity rule used throughout:** Every number is tagged as
 > **[S]** = specified in the project brief, **[A]** = assumption (justified, in the register in Section 5),
@@ -96,6 +96,8 @@ Simplified overall reactions (to be expanded in the balance):
 | S-06 | Design levers | Transformers + electrode geometry | |
 | S-07 | Transformer rating basis | 65 MVA **total** installed | Confirmed by Project Leader (Q1), Rev B |
 | S-08 | Project type | **Uprate of existing furnace**: shell, hearth and roof are fixed | Confirmed by Project Leader (Q2), Rev B |
+| S-09 | Baseline status | 55 MW furnace **exists** (operating baseline) | Confirmed (Q1b), Rev C |
+| S-10 | Data status | **Lecturer-defined hypothetical scenario; no real plant data supplied** | Confirmed (Q5/Q6), Rev C. Every non-[S] value must come from literature or calculation and be tagged. |
 
 ### 4.2 Missing parameters (needed for a rigorous design)
 
@@ -135,9 +137,10 @@ Confidence: **H** = well supported by multiple sources; **M** = one credible sou
 | A-08 | Westly constant *C₃* is the same for the 55 and 60 MW cases (same process) | I ∝ P^(2/3) | Classical similarity [R-01]; disputed [R-03] | L–M | Cross-check only, never the sole basis |
 | A-09 | Furnace utilisation | 90–95 % of calendar time at nominal power | Engineering judgement, to be referenced | L | Sensitivity on production rate |
 | A-10 | PCD/D ratio | To be determined from literature (expected order 2.5–3.0) | **Not yet referenced: research item** | L | Phase 4 literature review |
-| A-11 | 55/60 MW = active power **into the furnace** (transformer secondary / electrodes), not HV-metered power | — | Conservative choice: it gives the highest required MVA. If the brief means HV-metered power, the PF requirement drops (Section 7.3) | M | Q5 |
+| A-11 | 55/60 MW = active power **into the furnace** (transformer secondary / electrodes), not HV-metered power | — | Brief does not define it (S-10). The conservative choice (highest required MVA) is adopted as the **design basis**, and HV-metered power is reported as a sensitivity case | M | Sensitivity on η_el |
 | A-12 | Feed blend, reductant, slag chemistry and product grade unchanged between the cases | — | Isolates the scale-up effect (Section 2) | H (as a method) | — |
 | A-13 | ~~Furnace shell and hearth re-used~~ | — | **Closed: confirmed, now S-08** | — | — |
+| A-14 | The existing 55 MW furnace already operates on the 65 MVA (total) transformer bank, i.e. the uprate gains 5 MW **without** more MVA | Baseline PF = 55/65 = 0.846 at η_el = 1 | Consistent with the brief (55 MW exists; 65 MVA stated) and with typical FeCr PF ≈ 0.85 [R-02]. Alternative: the existing transformer is smaller and replaced by 65 MVA. **Both give the same 60 MW constraint (PF ≥ 0.923)**, so the design conclusion does not depend on this | M | Report both interpretations; Q1b wording |
 
 ---
 
@@ -267,12 +270,12 @@ All parameters will be held in one file (`calcs/parameters.py`) carrying the [S]
 | Q | Question | Why it matters |
 |---|---|---|
 | Q1 | ~~65 MVA total or per transformer?~~ **ANSWERED (Rev B): total.** | 65 MVA limit is binding |
-| Q1b | Is the 65 MVA bank new, or does the existing 55 MW furnace already run on 65 MVA? If it is new, what are the existing rating and configuration? | Fixes the baseline electrical point |
+| Q1b | ~~New or existing 65 MVA?~~ **ANSWERED (Rev C): the 55 MW furnace exists.** The existing transformer rating is not given, so it is handled by A-14 | Baseline electrical point via A-14 |
 | Q2 | ~~Uprate or new design?~~ **ANSWERED (Rev B): uprate of existing furnace.** | Shell, hearth and roof fixed |
 | Q3 | Confirm scope: include HV/grid, gas-cleaning, refractory, economics? | Workload and report structure |
 | Q4 | Product grade (charge chrome / HC FeCr), electrode type (Söderberg?), feed type (pellets, preheated?) | Mass and energy balance and SEC |
-| Q5 | Where are 55/60 MW measured: HV metering, transformer secondary, or bath? | PF_min ranges from 0.92 to above 0.96 |
-| Q6 | Do you have any real plant or lecturer-supplied data (electrode D, PCD, voltage taps, ore analysis)? | Replaces reference values |
+| Q5 | ~~Measurement point?~~ **ANSWERED (Rev C): hypothetical lecturer scenario, not defined.** A-11 (power into furnace) adopted, with sensitivity | PF_min 0.923 (basis) → 0.96 (with losses) |
+| Q6 | ~~Real data?~~ **ANSWERED (Rev C): none.** Reference-furnace approach (Section 6) confirmed | — |
 | Q7 | Is there an assessment rubric / required referencing style (Harvard / IEEE)? | Report planning |
 | Q8 | Do you accept the challenge in Section 7.3, i.e. that the central design problem is raising R/X (PF ≥ 0.92) by electrode geometry and reactance reduction? | Defines the thesis of the design |
 
