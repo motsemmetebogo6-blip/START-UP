@@ -128,7 +128,7 @@ Confidence: **H** = well supported by multiple sources; **M** = one credible sou
 | ID | Assumption | Value / range | Justification and reference | Conf. | How it will be tested |
 |---|---|---|---|---|---|
 | A-01 | Product is HC FeCr / charge chrome from South African chromite | Cr ≈ 50–55 %, C ≈ 6–8 %, Si ≈ 2–6 % (typical, to be referenced) | Typical SA closed-furnace product. Ref. to be confirmed [R-10] | M | Q4 to Project Leader |
-| A-02 | Electrodes are Söderberg (self-baking) | — | Standard for large SA closed FeCr furnaces [R-06] | H | Q4 | **DEFAULT ACCEPTED (Rev D):** charge chrome, Söderberg electrodes, pelletised/preheated feed | – |
+| A-02 | Electrodes are Söderberg (self-baking) | — | Standard for large SA closed FeCr furnaces [R-06] | H | Q4 (default accepted, Rev D) |
 | A-03 | ~~65 MVA = total installed rating~~ | — | **Closed: confirmed, now S-07** | — | — |
 | A-04 | Specific electrical energy (furnace) | 3.0–3.5 MWh/t with pelletised/preheated feed; up to ~4 MWh/t with cold mixed feed | 3–3.5 MWh/t for the Outotec route [R-05]; lowest 3.31 MWh/t at 6 % SiO₂ in ore [R-07]; −70 kWh/t per +100 °C preheat [R-04] | M | Own energy balance (Phase 3) |
 | A-05 | Baseline power factor at furnace | 0.80–0.85 | 0.85 cited as typical for an "average-sized" FeCr furnace; larger modern FeCr furnaces run lower [R-02] | M | Sensitivity analysis (see 7.3) |
@@ -273,7 +273,7 @@ All parameters will be held in one file (`calcs/parameters.py`) carrying the [S]
 | Q1b | ~~New or existing 65 MVA?~~ **ANSWERED (Rev C): the 55 MW furnace exists.** The existing transformer rating is not given, so it is handled by A-14 | Baseline electrical point via A-14 |
 | Q2 | ~~Uprate or new design?~~ **ANSWERED (Rev B): uprate of existing furnace.** | Shell, hearth and roof fixed |
 | Q3 | **DEFAULT ACCEPTED (Rev D):** scope per Section 1.3 | – |
-| Q4 | Product grade (charge chrome / HC FeCr), electrode type (Söderberg?), feed type (pellets, preheated?) | Mass and energy balance and SEC |
+| Q4 | **DEFAULT ACCEPTED (Rev D):** charge chrome, Söderberg electrodes, pelletised/preheated feed | – |
 | Q5 | ~~Measurement point?~~ **ANSWERED (Rev C): hypothetical lecturer scenario, not defined.** A-11 (power into furnace) adopted, with sensitivity | PF_min 0.923 (basis) → 0.96 (with losses) |
 | Q6 | ~~Real data?~~ **ANSWERED (Rev C): none.** Reference-furnace approach (Section 6) confirmed | — |
 | Q7 | **DEFAULT ACCEPTED (Rev D):** Harvard style; rubric not supplied | – |
