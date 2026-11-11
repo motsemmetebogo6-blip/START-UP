@@ -1,9 +1,11 @@
-# 01 – Engineering Design Basis (Rev A, for Project Leader review)
+# 01 – Engineering Design Basis (Rev B, for Project Leader review)
 
 **Project:** Design and Scale-Up of a Closed Ferrochrome Submerged Arc Furnace (SAF) from 55 MW to 60 MW using 65 MVA Transformers and Optimised Electrode Geometry
 **Discipline:** BEngTech Metallurgical Engineering – design assignment
-**Status:** DRAFT – HOLD POINT 1. No detailed calculations proceed until the Project Leader has reviewed this document and answered the decision questions in Section 10.
+**Status:** DRAFT Rev B – HOLD POINT 1 (partially cleared: Q1, Q2 answered). No detailed calculations proceed until the Project Leader has reviewed this document and answered the decision questions in Section 10.
 **Date:** 2026-11-11
+
+**Revision log:** Rev A – first issue. Rev B – Project Leader confirmed Q1 (65 MVA is the **total** installed transformer rating) and Q2 (**uprate of an existing furnace**). A-03 and A-13 are now specified items S-07 and S-08. Q3–Q8 remain open.
 
 > **Data integrity rule used throughout:** Every number is tagged as
 > **[S]** = specified in the project brief, **[A]** = assumption (justified, in the register in Section 5),
@@ -34,8 +36,8 @@
 | *Closed* furnace | Sealed roof; CO-rich off-gas (typically ~75–90 % CO by volume, to be confirmed by mass balance) is collected, cleaned and usually re-used (for example to preheat or sinter the feed). Usually paired with pelletised and/or preheated feed, because fines cause roof eruptions and blowouts in closed furnaces. | Off-gas volume, gas-cleaning capacity and the roof/seal design all scale with power. Feed must be permeable. |
 | *Ferrochrome* | Assumed: **high-carbon ferrochrome / charge chrome** made from chromite ore. Product type is not specified. | Drives the slag system (SiO₂–MgO–Al₂O₃), the specific energy and the target Cr recovery. |
 | *Submerged arc furnace* | AC, three-phase, three electrodes in a triangle. Most of the heat is released resistively in the slag/coke bed, with a small arc component. | Bath (load) resistance is the key electrical design variable. |
-| *Scale-up 55 MW → 60 MW* | +9.09 % active power (60/55 = 1.0909). Interpreted as a **retrofit/uprate of an existing furnace** rather than a greenfield furnace. Still needs confirmation (Q2). | Fixes which dimensions are frozen (shell, hearth) and which can change (transformers, electrodes, PCD, voltage taps). |
-| *65 MVA transformers* | **Ambiguous** (Q1): (a) one bank of 3 × single-phase units totalling 65 MVA, (b) 3 × 65 MVA units (195 MVA, implausible for 60 MW), or (c) one three-phase 65 MVA unit. Interpretation (a)/(c) is used: **65 MVA total installed**. | Fixes the maximum apparent power and therefore the **minimum power factor**. See Section 7.3. |
+| *Scale-up 55 MW → 60 MW* | +9.09 % active power (60/55 = 1.0909). **Confirmed (Q2): uprate of an existing furnace.** | Fixes which dimensions are frozen (shell, hearth) and which can change (transformers, electrodes, PCD, voltage taps). |
+| *65 MVA transformers* | **Confirmed (Q1): 65 MVA total installed** (e.g. 3 × ~21.7 MVA single-phase, or one three-phase unit; configuration still open under M-01). | Fixes the maximum apparent power and therefore the **minimum power factor**. See Section 7.3. |
 | *Optimised electrode geometry* | Electrode diameter *D*, pitch circle diameter (PCD), electrode tip position/penetration and electrode–wall spacing. | These set current density, bath resistance (and therefore the power factor) and hearth power distribution. |
 
 ### 1.2 What the assignment must deliver (interpreted)
@@ -88,10 +90,12 @@ Simplified overall reactions (to be expanded in the balance):
 |---|---|---|---|
 | S-01 | Baseline furnace active power | 55 MW | Measurement point not defined (see Q5) |
 | S-02 | Proposed furnace active power | 60 MW | Same |
-| S-03 | Transformer rating | 65 MVA | Total vs per-unit not defined (Q1) |
+| S-03 | Transformer rating | 65 MVA | Total (see S-07) |
 | S-04 | Furnace type | Closed SAF | |
 | S-05 | Product | Ferrochrome | Grade not defined (Q4) |
 | S-06 | Design levers | Transformers + electrode geometry | |
+| S-07 | Transformer rating basis | 65 MVA **total** installed | Confirmed by Project Leader (Q1), Rev B |
+| S-08 | Project type | **Uprate of existing furnace**: shell, hearth and roof are fixed | Confirmed by Project Leader (Q2), Rev B |
 
 ### 4.2 Missing parameters (needed for a rigorous design)
 
@@ -123,7 +127,7 @@ Confidence: **H** = well supported by multiple sources; **M** = one credible sou
 |---|---|---|---|---|---|
 | A-01 | Product is HC FeCr / charge chrome from South African chromite | Cr ≈ 50–55 %, C ≈ 6–8 %, Si ≈ 2–6 % (typical, to be referenced) | Typical SA closed-furnace product. Ref. to be confirmed [R-10] | M | Q4 to Project Leader |
 | A-02 | Electrodes are Söderberg (self-baking) | — | Standard for large SA closed FeCr furnaces [R-06] | H | Q4 |
-| A-03 | 65 MVA = **total** installed rating (3 × ~21.7 MVA single-phase, or one 3φ unit) | 65 MVA | Only interpretation consistent with a 60 MW furnace | M | Q1 |
+| A-03 | ~~65 MVA = total installed rating~~ | — | **Closed: confirmed, now S-07** | — | — |
 | A-04 | Specific electrical energy (furnace) | 3.0–3.5 MWh/t with pelletised/preheated feed; up to ~4 MWh/t with cold mixed feed | 3–3.5 MWh/t for the Outotec route [R-05]; lowest 3.31 MWh/t at 6 % SiO₂ in ore [R-07]; −70 kWh/t per +100 °C preheat [R-04] | M | Own energy balance (Phase 3) |
 | A-05 | Baseline power factor at furnace | 0.80–0.85 | 0.85 cited as typical for an "average-sized" FeCr furnace; larger modern FeCr furnaces run lower [R-02] | M | Sensitivity analysis (see 7.3) |
 | A-06 | Electrical efficiency of the secondary circuit (power in bath / transformer active power) | 0.94–0.98 | Engineering judgement. **No reference yet: flagged for research** | L | Literature search; sensitivity |
@@ -133,7 +137,7 @@ Confidence: **H** = well supported by multiple sources; **M** = one credible sou
 | A-10 | PCD/D ratio | To be determined from literature (expected order 2.5–3.0) | **Not yet referenced: research item** | L | Phase 4 literature review |
 | A-11 | 55/60 MW = active power **into the furnace** (transformer secondary / electrodes), not HV-metered power | — | Conservative choice: it gives the highest required MVA. If the brief means HV-metered power, the PF requirement drops (Section 7.3) | M | Q5 |
 | A-12 | Feed blend, reductant, slag chemistry and product grade unchanged between the cases | — | Isolates the scale-up effect (Section 2) | H (as a method) | — |
-| A-13 | Furnace shell and hearth are re-used (uprate of an existing furnace) | — | Most likely meaning of "scale-up from 55 MW" | M | Q2 |
+| A-13 | ~~Furnace shell and hearth re-used~~ | — | **Closed: confirmed, now S-08** | — | — |
 
 ---
 
@@ -162,6 +166,19 @@ Every additional 0.1 MWh/t of SEC costs roughly 11–14 t/d. The energy balance 
 
 ### 7.1 Definition
 Same furnace (A-13) and same feed and product (A-12), with furnace active power raised to 60 MW [S] within a 65 MVA transformer limit [S]. Electrode geometry (D, PCD, penetration) and transformer secondary voltage taps are the design variables.
+
+### 7.1a Consequences of the confirmed uprate basis (Rev B)
+
+Because the shell, hearth and roof are fixed (S-08) and the apparent power is capped at 65 MVA total (S-07):
+
+| Consequence | Quantity | Significance |
+|---|---|---|
+| Hearth / shaft power density rises at fixed hearth area | × 1.091 (+9.1 %) | Higher hearth and sidewall heat flux. Refractory and cooling-water capacity must be checked (M-11). |
+| Off-gas generation and roof heat load rise roughly in proportion to production | ≈ +9 % (confirmed later by the mass balance) | The closed-furnace gas-cleaning plant, seals and pressure control must have this margin. |
+| Electrode diameter can only grow if the existing electrode holder, contact clamps, casing and slipping system are replaced; PCD is limited by the existing roof penetrations and the electrode-to-wall clearance | Geometric limit | "Optimised electrode geometry" works **within fixed roof/shell boundaries**. PCD changes need new roof penetrations (a major outage). |
+| PF at 65 MVA total becomes a binding constraint | PF ≥ 0.923 (η_el = 1) | See 7.3. The core design problem. |
+
+**New question arising (Q1b):** Is the 65 MVA bank **new** (replacing the existing transformers), or does the existing 55 MW furnace **already run on 65 MVA**? If it already runs on 65 MVA, the uprate is purely an *R*/*X* (power factor) improvement. If the transformers are new, the existing rating and impedance are needed for the baseline.
 
 ### 7.2 Simple scale ratios (power ratio 60/55 = 1.0909)
 
@@ -194,7 +211,7 @@ Conversely, at the typical PF = 0.85 [A-05], 65 MVA delivers 55.2 MW of transfor
 1. The 55 MW baseline appears to already be **MVA-limited on 65 MVA at PF ≈ 0.85**. The 60 MW case is therefore **not achievable by transformer rating alone**. It requires PF ≥ 0.92 at the very least, and more once circuit losses are counted.
 2. PF ≥ 0.92 on a large FeCr SAF is **above the typical range** (0.85 for average-sized furnaces, lower for large ones [R-02]). It is only plausible if the circuit **reactance *X* is reduced** (shorter/interleaved high-current line, closer conductor spacing, low-reactance busbar design) **and/or the bath resistance *R* is increased** (larger PCD, burden/slag resistivity, electrode tip position), by roughly 50–120 % in *R*/*X* relative to PF 0.85.
 3. **Shunt capacitor banks on the HV side do NOT reduce the furnace transformer MVA loading.** They improve the PF seen by the grid only. This is a common misconception and must not be used to justify the uprate.
-4. Alternative routes to be evaluated: (a) transformer **overload rating** (furnace transformers are often specified with a continuous overload margin, M-01); (b) reinterpreting 65 MVA as **per transformer** (Q1); (c) defining 60 MW at HV metering (Q5); (d) a larger transformer (outside the brief).
+4. Alternative routes to be evaluated: (a) transformer **overload rating** (furnace transformers are often specified with a continuous overload margin, M-01); (b) defining 60 MW at HV metering (Q5); (c) a larger transformer (outside the brief). *Rev B: the "65 MVA per transformer" escape route is closed by the Q1 answer, so the 65 MVA limit is **binding**.*
 
 This finding becomes the central design argument of the assignment: **"optimised electrode geometry" is the lever that raises R/X so that 60 MW fits within 65 MVA.** It is tested quantitatively in Phase 2, with the risks that higher operating resistance carries (shallower electrode penetration, hotter roof and burden top, higher off-gas temperature, risk of a lower Cr recovery).
 
@@ -249,8 +266,9 @@ All parameters will be held in one file (`calcs/parameters.py`) carrying the [S]
 
 | Q | Question | Why it matters |
 |---|---|---|
-| Q1 | Is 65 MVA the **total** transformer rating (e.g. 3 × 21.7 MVA single-phase) or **per transformer**? Is it a new transformer replacing an existing one (what rating does the 55 MW furnace have now)? | Decides whether 60 MW is feasible (Section 7.3) |
-| Q2 | Is this an **uprate of an existing furnace** (shell/hearth fixed) or a **new 60 MW design** based on a 55 MW reference? | Fixes the design variables |
+| Q1 | ~~65 MVA total or per transformer?~~ **ANSWERED (Rev B): total.** | 65 MVA limit is binding |
+| Q1b | Is the 65 MVA bank new, or does the existing 55 MW furnace already run on 65 MVA? If it is new, what are the existing rating and configuration? | Fixes the baseline electrical point |
+| Q2 | ~~Uprate or new design?~~ **ANSWERED (Rev B): uprate of existing furnace.** | Shell, hearth and roof fixed |
 | Q3 | Confirm scope: include HV/grid, gas-cleaning, refractory, economics? | Workload and report structure |
 | Q4 | Product grade (charge chrome / HC FeCr), electrode type (Söderberg?), feed type (pellets, preheated?) | Mass and energy balance and SEC |
 | Q5 | Where are 55/60 MW measured: HV metering, transformer secondary, or bath? | PF_min ranges from 0.92 to above 0.96 |
