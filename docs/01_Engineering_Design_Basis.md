@@ -1,11 +1,11 @@
-# 01 – Engineering Design Basis (Rev C, for Project Leader review)
+# 01 – Engineering Design Basis (Rev D – HP-1 cleared)
 
 **Project:** Design and Scale-Up of a Closed Ferrochrome Submerged Arc Furnace (SAF) from 55 MW to 60 MW using 65 MVA Transformers and Optimised Electrode Geometry
 **Discipline:** BEngTech Metallurgical Engineering – design assignment
-**Status:** DRAFT Rev C – HOLD POINT 1 (partially cleared: Q1, Q1b, Q2, Q5, Q6 answered). No detailed calculations proceed until the Project Leader has reviewed this document and answered the decision questions in Section 10.
+**Status:** Rev D – HOLD POINT 1 CLEARED (all questions answered or defaults accepted, 2026-11-11). Phase 2 is in `docs/02_Electrical_Design.md`. No detailed calculations proceed until the Project Leader has reviewed this document and answered the decision questions in Section 10.
 **Date:** 2026-11-11
 
-**Revision log:** Rev A – first issue. Rev B – Project Leader confirmed Q1 (65 MVA is the **total** installed transformer rating) and Q2 (**uprate of an existing furnace**). A-03 and A-13 are now specified items S-07 and S-08. Q3–Q8 remain open. Rev C – Project Leader confirmed the 55 MW furnace **exists** (Q1b) and that the scenario is a **lecturer-defined hypothetical with no real plant data** (Q5/Q6). All baseline values are therefore reference-furnace values derived from literature and first principles. Q3, Q4, Q7 and Q8 remain open.
+**Revision log:** Rev A – first issue. Rev B – Project Leader confirmed Q1 (65 MVA is the **total** installed transformer rating) and Q2 (**uprate of an existing furnace**). A-03 and A-13 are now specified items S-07 and S-08. Q3–Q8 remain open. Rev C – Project Leader confirmed the 55 MW furnace **exists** (Q1b) and that the scenario is a **lecturer-defined hypothetical with no real plant data** (Q5/Q6). All baseline values are therefore reference-furnace values derived from literature and first principles. Q3, Q4, Q7 and Q8 remain open. Rev D – Project Leader instructed "use defaults" for Q3, Q4, Q7 and Q8: proposed scope (Section 1.3), charge chrome with Söderberg electrodes and pelletised/preheated feed, Harvard referencing, and the R/X (power factor) problem accepted as the central design argument. A-01, A-02 and A-04 (preheated-pellet range) are adopted as the design basis. A-07 is revised and A-15 to A-18 are added in docs/02 Section 7.
 
 > **Data integrity rule used throughout:** Every number is tagged as
 > **[S]** = specified in the project brief, **[A]** = assumption (justified, in the register in Section 5),
@@ -128,7 +128,7 @@ Confidence: **H** = well supported by multiple sources; **M** = one credible sou
 | ID | Assumption | Value / range | Justification and reference | Conf. | How it will be tested |
 |---|---|---|---|---|---|
 | A-01 | Product is HC FeCr / charge chrome from South African chromite | Cr ≈ 50–55 %, C ≈ 6–8 %, Si ≈ 2–6 % (typical, to be referenced) | Typical SA closed-furnace product. Ref. to be confirmed [R-10] | M | Q4 to Project Leader |
-| A-02 | Electrodes are Söderberg (self-baking) | — | Standard for large SA closed FeCr furnaces [R-06] | H | Q4 |
+| A-02 | Electrodes are Söderberg (self-baking) | — | Standard for large SA closed FeCr furnaces [R-06] | H | Q4 | **DEFAULT ACCEPTED (Rev D):** charge chrome, Söderberg electrodes, pelletised/preheated feed | – |
 | A-03 | ~~65 MVA = total installed rating~~ | — | **Closed: confirmed, now S-07** | — | — |
 | A-04 | Specific electrical energy (furnace) | 3.0–3.5 MWh/t with pelletised/preheated feed; up to ~4 MWh/t with cold mixed feed | 3–3.5 MWh/t for the Outotec route [R-05]; lowest 3.31 MWh/t at 6 % SiO₂ in ore [R-07]; −70 kWh/t per +100 °C preheat [R-04] | M | Own energy balance (Phase 3) |
 | A-05 | Baseline power factor at furnace | 0.80–0.85 | 0.85 cited as typical for an "average-sized" FeCr furnace; larger modern FeCr furnaces run lower [R-02] | M | Sensitivity analysis (see 7.3) |
@@ -272,12 +272,12 @@ All parameters will be held in one file (`calcs/parameters.py`) carrying the [S]
 | Q1 | ~~65 MVA total or per transformer?~~ **ANSWERED (Rev B): total.** | 65 MVA limit is binding |
 | Q1b | ~~New or existing 65 MVA?~~ **ANSWERED (Rev C): the 55 MW furnace exists.** The existing transformer rating is not given, so it is handled by A-14 | Baseline electrical point via A-14 |
 | Q2 | ~~Uprate or new design?~~ **ANSWERED (Rev B): uprate of existing furnace.** | Shell, hearth and roof fixed |
-| Q3 | Confirm scope: include HV/grid, gas-cleaning, refractory, economics? | Workload and report structure |
+| Q3 | **DEFAULT ACCEPTED (Rev D):** scope per Section 1.3 | – |
 | Q4 | Product grade (charge chrome / HC FeCr), electrode type (Söderberg?), feed type (pellets, preheated?) | Mass and energy balance and SEC |
 | Q5 | ~~Measurement point?~~ **ANSWERED (Rev C): hypothetical lecturer scenario, not defined.** A-11 (power into furnace) adopted, with sensitivity | PF_min 0.923 (basis) → 0.96 (with losses) |
 | Q6 | ~~Real data?~~ **ANSWERED (Rev C): none.** Reference-furnace approach (Section 6) confirmed | — |
-| Q7 | Is there an assessment rubric / required referencing style (Harvard / IEEE)? | Report planning |
-| Q8 | Do you accept the challenge in Section 7.3, i.e. that the central design problem is raising R/X (PF ≥ 0.92) by electrode geometry and reactance reduction? | Defines the thesis of the design |
+| Q7 | **DEFAULT ACCEPTED (Rev D):** Harvard style; rubric not supplied | – |
+| Q8 | **DEFAULT ACCEPTED (Rev D):** R/X (PF ≥ 0.923) is the central design problem | – |
 
 ---
 
