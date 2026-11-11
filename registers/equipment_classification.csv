@@ -1,0 +1,14 @@
+EquipmentID,Component,Class,Criterion,Limit,Unit,Value_A_55MW,Value_B_60MW_B20,Utilisation_B,Evidence,Owner_WP,Gate
+EQ-01,Furnace transformers (65 MVA total),V (likely U - tap range),DC-01 apparent power,65,MVA,65.0,65.0,1.000,calc 02 case 3c-20; tap range must reach ~328-367 V vs 312 V,WP3,G3
+EQ-02,Short network (busbars and flexibles),U,Reactance reduction required,,mohm,0.796,0.637,,X -20% needed (A-17),WP3,G3
+EQ-03,Electrode columns D=1.55 m,R (provisional),DC-04 current density,6.38,A/cm2,6.38,6.06,0.950,calc 02,WP4,G3
+EQ-04,Electrode holders and contact clamps,R (provisional),DC-05 electrode current,120.5,kA,120.5,114.4,0.949,calc 02,WP4/WP6,G3
+EQ-05,Electrode PCD and positions,O or U,Achieve R +21% within roof openings,,mohm,1.264,1.528,,Geometry not yet calculated,WP4,G3
+EQ-06,Electrode regulation system,O,DC-12 stability,,-,,,,Resistance-control setpoints (R-02),WP3/WP4,G3
+EQ-07,Electrode slipping and paste system,V,Paste supply capacity,,kg/d,,,,Consumption ~ +9%,WP4,G3
+EQ-08,Furnace shell and hearth refractory,V,DC-07 refractory and shell,,-,,,,Power density +9.1% at fixed hearth area,WP5,G3
+EQ-09,Roof and seals,V,DC-08 / DC-07,,-,,,,Roof heat and gas load ~ +9%,WP5/WP6,G3
+EQ-10,Cooling-water system,V,DC-06 heat removal,0.90,fraction of design,,,,Heat load not yet calculated,WP5,G3
+EQ-11,Off-gas cleaning plant,V,DC-11 gas capacity,,Nm3/h,,,,Gas ~ +9%,WP7/WP6,G3
+EQ-12,"Feed, charging and tapping systems",V,DC-11 throughput,,t/d,,,,Throughput ~ +9%,WP7/WP6,G3
+EQ-13,HV supply and reactive compensation,V,Grid PF and harmonics (flagged only),,-,,,,Out of detailed scope,WP3,G3

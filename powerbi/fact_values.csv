@@ -1,0 +1,85 @@
+ScenarioID,ParamID,Value,Tag,SourceRef,WP,Gate,Rev
+A,P,55.0,S,Brief S-01/S-02,WP3,G3-provisional,Rev0-G0
+A,S,65.0,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+A,Q,34.641,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+A,PF,0.8462,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+A,I,120.4501,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+A,VLL,311.5629,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+A,R,1.2637,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+A,X,0.7959,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+A,J,6.3834,C,calcs/02_electrical_operating_points.py,WP4,G3-provisional,Rev0-G0
+A,C3,8.3285,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+A,PPH,18.333,C,P/3,WP3,G3-provisional,Rev0-G0
+A,LOAD,100.0,C,S/65 MVA,WP3,G3-provisional,Rev0-G0
+A,RX,1.588,C,R/X,WP3,G3-provisional,Rev0-G0
+A,D,1.55,A,A-16,WP4,G1-RFS,Rev0-G0
+F1,P,60.0,S,Brief S-01/S-02,WP3,G3-provisional,Rev0-G0
+F1,S,71.508,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F1,Q,38.9023,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F1,PF,0.8391,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F1,I,127.6437,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F1,VLL,323.4405,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F1,R,1.2275,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F1,X,0.7959,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F1,J,6.7647,C,calcs/02_electrical_operating_points.py,WP4,G3-provisional,Rev0-G0
+F1,C3,8.3285,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F1,PPH,20.0,C,P/3,WP3,G3-provisional,Rev0-G0
+F1,LOAD,110.01,C,S/65 MVA,WP3,G3-provisional,Rev0-G0
+F1,RX,1.542,C,R/X,WP3,G3-provisional,Rev0-G0
+F1,D,1.55,A,A-16,WP4,G1-RFS,Rev0-G0
+F2,P,60.0,S,Brief S-01/S-02,WP3,G3-provisional,Rev0-G0
+F2,S,70.9091,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F2,Q,37.7902,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F2,PF,0.8462,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F2,I,125.806,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F2,VLL,325.4168,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F2,R,1.2637,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F2,X,0.7959,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F2,J,6.6673,C,calcs/02_electrical_operating_points.py,WP4,G3-provisional,Rev0-G0
+F2,C3,8.2086,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+F2,PPH,20.0,C,P/3,WP3,G3-provisional,Rev0-G0
+F2,LOAD,109.09,C,S/65 MVA,WP3,G3-provisional,Rev0-G0
+F2,RX,1.588,C,R/X,WP3,G3-provisional,Rev0-G0
+F2,D,1.55,A,A-16,WP4,G1-RFS,Rev0-G0
+B0,P,60.0,S,Brief S-01/S-02,WP3,G3-provisional,Rev0-G0
+B0,S,65.0,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B0,Q,25.0,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B0,PF,0.9231,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B0,I,102.325,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B0,VLL,366.7508,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B0,R,1.9101,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B0,X,0.7959,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B0,J,5.4229,C,calcs/02_electrical_operating_points.py,WP4,G3-provisional,Rev0-G0
+B0,C3,6.6765,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B0,PPH,20.0,C,P/3,WP3,G3-provisional,Rev0-G0
+B0,LOAD,100.0,C,S/65 MVA,WP3,G3-provisional,Rev0-G0
+B0,RX,2.4,C,R/X,WP3,G3-provisional,Rev0-G0
+B0,D,1.55,A,A-16,WP4,G1-RFS,Rev0-G0
+B20,P,60.0,S,Brief S-01/S-02,WP3,G3-provisional,Rev0-G0
+B20,S,65.0,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B20,Q,25.0,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B20,PF,0.9231,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B20,I,114.4028,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B20,VLL,328.0319,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B20,R,1.5281,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B20,X,0.6367,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B20,J,6.0629,C,calcs/02_electrical_operating_points.py,WP4,G3-provisional,Rev0-G0
+B20,C3,7.4645,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B20,PPH,20.0,C,P/3,WP3,G3-provisional,Rev0-G0
+B20,LOAD,100.0,C,S/65 MVA,WP3,G3-provisional,Rev0-G0
+B20,RX,2.4,C,R/X,WP3,G3-provisional,Rev0-G0
+B20,D,1.55,A,A-16,WP4,G1-RFS,Rev0-G0
+B30,P,60.0,S,Brief S-01/S-02,WP3,G3-provisional,Rev0-G0
+B30,S,65.0,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B30,Q,25.0,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B30,PF,0.9231,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B30,I,122.3017,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B30,VLL,306.8457,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B30,R,1.3371,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B30,X,0.5571,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B30,J,6.4816,C,calcs/02_electrical_operating_points.py,WP4,G3-provisional,Rev0-G0
+B30,C3,7.9799,C,calcs/02_electrical_operating_points.py,WP3,G3-provisional,Rev0-G0
+B30,PPH,20.0,C,P/3,WP3,G3-provisional,Rev0-G0
+B30,LOAD,100.0,C,S/65 MVA,WP3,G3-provisional,Rev0-G0
+B30,RX,2.4,C,R/X,WP3,G3-provisional,Rev0-G0
+B30,D,1.55,A,A-16,WP4,G1-RFS,Rev0-G0

@@ -4,6 +4,9 @@ BEngTech Metallurgical Engineering design assignment, working repository.
 
 | Path | Content | Status |
 |---|---|---|
+| `docs/00_SAF_Uprating_Design_Framework.md` | **Controlling document**: governing question, WP1–WP10, gates G0–G6, team allocation, interfaces, acceptance criteria, equipment classification, Power BI architecture | Rev 0 – for team approval (G0) |
+| `registers/` | Controlled common registers: assumptions, equipment classification (R/O/U/V), interfaces | Rev 0 |
+| `powerbi/` + `calcs/export_powerbi.py` | Power BI star-schema dataset generated from calcs and registers | Rev 0 starter |
 | `docs/01_Engineering_Design_Basis.md` | Brief interpretation, design basis, parameter and assumptions registers, case definitions, methodology, execution plan | Rev D – HP-1 cleared |
 | `docs/02_Electrical_Design.md` | Baseline and 60 MW electrical operating points, R/X requirement, transformer requirements | Rev A – awaiting review (HP-2) |
 | `calcs/parameters.py` | Single tagged input file | Live |

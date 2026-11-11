@@ -1,0 +1,12 @@
+ID,From,To,Data_item,Unit,Needed_by_gate,Current_value,Status
+IF-01,WP1,All,Reference Furnace Specification,various,G1,docs/00 s8.1 provisional,Open
+IF-02,WP3,WP4,"Electrode current I, required operating resistance R",kA; mohm,G2,"114.4 kA; 1.528 mohm (B20)",Provisional
+IF-03,WP4,WP3,Achievable R from geometry; electrode column reactance,mohm,G3,,Open
+IF-04,WP3,WP5,"Power split: bath, electrode and conductor losses",MW,G3,,Open
+IF-05,WP4,WP5,Electrode tip position and penetration; PCD,m,G3,,Open
+IF-06,WP7,WP5,"Process heat balance (slag, alloy, off-gas, losses)",MW,G3,,Open
+IF-07,WP5,WP7,Hearth and slag temperature feasibility,degC,G3,,Open
+IF-08,WP7,WP6/WP9,"Production rate, alloy and slag masses, off-gas volume",t/d; Nm3/h,G3,"340-418 t/d at 55 MW (indicative)",Indicative
+IF-09,WP3,WP6,Electrode current and short-circuit forces on holders and busbars,kA; kN,G3,,Open
+IF-10,WP3-WP7,WP9,Equipment utilisation vs limits,%,G4,registers/equipment_classification.csv,Live
+IF-11,WP8/WP9,WP10,Upgrade list and operating limits,-,G5,,Open

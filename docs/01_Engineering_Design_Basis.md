@@ -51,6 +51,8 @@
 
 ### 1.3 Scope boundaries (proposed; confirm under Q3)
 
+> **Scope change (CN-02, 2026-11-11):** economic evaluation (WP9) and mechanical/structural assessment (WP6) are now **in scope**, per the controlling framework `docs/00`.
+
 - **In scope:** furnace transformers (secondary side), high-current line, electrodes, bath and hearth, feed and products, off-gas quantity.
 - **Out of scope unless instructed:** HV substation and grid compliance detail (harmonics and flicker only flagged), pelletising/sintering plant design, gas-cleaning plant detailed design, detailed refractory thermal FEA, costing (include it only if the rubric requires an economic evaluation).
 
@@ -251,6 +253,8 @@ Original Westly (1974/75) and Andreae/Kelly papers; PCD/D design ratios; η_el a
 ---
 
 ## 9. Technical execution plan
+
+> **Superseded (CN-01, 2026-11-11):** this phase plan is replaced by work packages WP1–WP10 and Gates G0–G6 in `docs/00_SAF_Uprating_Design_Framework.md`. Kept for traceability.
 
 | Phase | Content | Deliverable | Hold point |
 |---|---|---|---|

@@ -1,0 +1,15 @@
+ParamID,Name,Unit,WP,Owner,Category
+P,Active power,MW,WP3,M2,Electrical
+S,Apparent power,MVA,WP3,M2,Electrical
+Q,Reactive power,Mvar,WP3,M2,Electrical
+PF,Power factor,-,WP3,M2,Electrical
+I,Electrode current,kA,WP3,M2,Electrical
+VLL,Secondary voltage (line),V,WP3,M2,Electrical
+R,Operating resistance per phase,mΩ,WP3,M2,Electrical
+X,Circuit reactance per phase,mΩ,WP3,M2,Electrical
+J,Electrode current density,A/cm²,WP4,M3,Electrodes
+C3,Westly C3,-,WP3,M2,Electrical
+PPH,Phase power,MW,WP3,M2,Electrical
+LOAD,Transformer loading,%,WP3,M2,Electrical
+RX,R/X ratio,-,WP3,M2,Electrical
+D,Electrode diameter,m,WP4,M3,Electrodes
