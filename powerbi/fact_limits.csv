@@ -1,5 +1,5 @@
 EquipmentID,Component,Class,Criterion,Limit,Unit,Value_A,Value_B20,Owner_WP
-EQ-01,Furnace transformers (65 MVA total),V (likely U - tap range),DC-01 apparent power,65,MVA,65.0,65.0,WP3
+EQ-01,Furnace transformers (65 MVA total),O (marginal) for B20 / U for B0,DC-01 apparent power,65,MVA,65.0,65.0,WP3
 EQ-02,Short network (busbars and flexibles),U,Reactance reduction required,,mohm,0.796,0.637,WP3
 EQ-03,Electrode columns D=1.55 m,R (provisional),DC-04 current density,6.38,A/cm2,6.38,6.06,WP4
 EQ-04,Electrode holders and contact clamps,R (provisional),DC-05 electrode current,120.5,kA,120.5,114.4,WP4/WP6
@@ -8,7 +8,7 @@ EQ-06,Electrode regulation system,O,DC-12 stability,,-,,,WP3/WP4
 EQ-07,Electrode slipping and paste system,V,Paste supply capacity,,kg/d,,,WP4
 EQ-08,Furnace shell and hearth refractory,V,DC-07 refractory and shell,,-,,,WP5
 EQ-09,Roof and seals,V,DC-08 / DC-07,,-,,,WP5/WP6
-EQ-10,Cooling-water system,V,DC-06 heat removal,0.90,fraction of design,,,WP5
-EQ-11,Off-gas cleaning plant,V,DC-11 gas capacity,,Nm3/h,,,WP7/WP6
-EQ-12,"Feed, charging and tapping systems",V,DC-11 throughput,,t/d,,,WP7/WP6
+EQ-10,Cooling-water system,V (likely U),DC-06 heat removal,0.90,fraction of design,,,WP5
+EQ-11,Off-gas cleaning plant,V (likely U),DC-11 gas capacity,,Nm3/h,,,WP7/WP6
+EQ-12,"Feed, charging and tapping systems",V (likely U),DC-11 throughput,,t/d,,,WP7/WP6
 EQ-13,HV supply and reactive compensation,V,Grid PF and harmonics (flagged only),,-,,,WP3

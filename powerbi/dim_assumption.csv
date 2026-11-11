@@ -17,3 +17,8 @@ A-15,Grid frequency,50,Hz,South African grid,-,H,WP3,Adopted,D
 A-16,Baseline electrode diameter,1.55,m,Same as 63 MVA SA FeCr analogues and 48 MW model furnace,"R-11, R-13",M,WP1/WP4,Adopted (RFS),D
 A-17,Achievable total reactance reduction,20 (about 29 in short network),%,70% of SAF reactance in the short network; feasibility to be shown,R-14,L,WP3,Provisional,D
 A-18,Westly C3 calibration of reference furnace,8.33,-,Analogue furnace 48 MW / 110 kA; within reported range 6-11,"R-12, R-13",M,WP1/WP3,Adopted (RFS),D
+A-19,Baseline PCD/D ratio,2.70,-,Mid-point of 2.44 and 3.0 from two published FeCr furnaces,"R-16, R-17",M,WP1/WP4,Adopted (RFS draft),A
+A-20,Hearth/PCD ratio,2.60,-,Mid-point of 2.55 and 2.67 from two published FeCr furnaces,"R-16, R-17",M,WP1/WP5,Adopted (RFS draft),A
+A-21,HV supply voltage,132 (88 sensitivity),kV,Typical SA furnace supply levels; no data,-,L,WP3,Adopted (RFS draft),A
+A-22,Auxiliary plant design margin over 55 MW duty,10,%,Engineering judgement; no data. Critical - decides auxiliaries class,-,L,WP5/WP7,Critical - team review at G1,A
+A-23,Existing transformer secondary tap range,260-340,V,Engineering judgement around 312 V; no data. Critical - decides transformer class,-,L,WP3,Critical - team review at G1,A

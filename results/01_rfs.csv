@@ -1,0 +1,48 @@
+Group,Item,Value,Unit,Tag,Basis
+Electrical,Active power,55.0,MW,S,S-01
+Electrical,Phase power P/3,18.3333,MW,C,balanced
+Electrical,Apparent power (= rating),65.0,MVA,A,A-14
+Electrical,Power factor,0.8462,-,C,R/Z
+Electrical,Reactive power,34.641,Mvar,C,sqrt(S2-P2)
+Electrical,Electrode current,120.4501,kA,C,Westly C3 = 8.33 (A-18)
+Electrical,Secondary voltage (line),311.5629,V,C,S/(sqrt3 I)
+Electrical,Operating resistance per phase,1.2637,mohm,C,P/(3I2)
+Electrical,Total reactance per phase,0.7959,mohm,C,sqrt(Z2-R2)
+Electrical,Reactance: short network + columns (70 %),0.5571,mohm,C,R-14 share
+Electrical,Reactance: transformer + remainder (30 %),0.2388,mohm,C,R-14 share
+Electrical,"Total reactance, per unit on 65 MVA/312 V",0.5329,pu,C,X/Zbase
+Electrical,"Transformer share, per unit (implied u_k)",0.1599,pu,C,check vs literature (WP3)
+Electrical,Transformer units,3 x 21.67 MVA 1-phase,-,A,docs/02 s6
+Electrical,Secondary winding current (delta at electrodes),69.5419,kA,C,I/sqrt3
+Electrical,Winding current from unit rating 21.67 MVA / V_LL,69.5419,kA,C,consistency check
+Electrical,Primary line current at 132 kV,284.3013,A,C,A-21
+Electrical,Primary line current at 88 kV,426.4519,A,C,A-21 sens.
+Electrical,Existing secondary tap range (min),260.0,V,A,A-23
+Electrical,Existing secondary tap range (max),340.0,V,A,A-23
+Geometry,Electrode diameter D,1.55,m,A,A-16
+Geometry,Electrode cross-section,1.8869,m2,C,pi D2/4
+Geometry,Electrode current density,6.3834,A/cm2,C,I/A
+Geometry,Pitch circle diameter PCD,4.185,m,A,A-19 (PCD/D = 2.70)
+Geometry,Electrode centre-to-centre spacing,3.6243,m,C,PCD sqrt3/2
+Geometry,Clear gap between electrodes,2.0743,m,C,spacing - D
+Geometry,Hearth (inner lining) diameter,10.881,m,A,A-20 (hearth/PCD = 2.60)
+Geometry,Electrode surface to hearth wall,2.573,m,C,radial
+Geometry,Shell inner diameter,13.7,m,L,R-11
+Geometry,Implied sidewall lining thickness,1.4095,m,C,(shell - hearth)/2 - plausibility check
+Geometry,Hearth area,92.9881,m2,C,pi Dh2/4
+Geometry,Hearth power density at 55 MW,0.5915,MW/m2,C,P/A
+Geometry,Hearth power density at 60 MW (same hearth),0.6452,MW/m2,C,P/A
+Geometry,Power per electrode / PCD-circle area at 55 MW,3.9984,MW/m2,C,P/A_PCD
+Process,Feed Cr (from Cr2O3),30.2418,mass %,C,R-18 analysis
+Process,Feed Fe (from FeO),18.7332,mass %,C,R-18 analysis
+Process,Feed Cr/Fe ratio (calc vs reported 1.62),1.6143,-,C,consistency check
+Process,Feed analysis closure (5 oxides),96.1,mass %,C,"remainder = CaO, TiO2, V2O5, LOI etc."
+Process,Specific electrical energy,3.25,MWh/t,A,A-04 mid
+Process,Utilisation,0.92,-,A,A-09 mid
+Process,Alloy production at 55 MW,373.6615,t/d,C,P 24 u / SEC
+Process,Alloy production at 55 MW (annual),136.3865,kt/a,C,x365
+Process,"Alloy production at 60 MW (same SEC, indicative)",407.6308,t/d,C,WP7 to confirm
+Process,Slag basicity (CaO+MgO)/SiO2,0.8333,-,C,R-19 typical
+Process,Slag MgO/Al2O3,0.8846,-,C,R-19 typical
+Auxiliary,Aux. design capacity (relative to 55 MW duty),1.1,x,A,A-22
+Auxiliary,Aux. utilisation at 60 MW (if load ~ power),0.9917,fraction,C,1.0909 / 1.10

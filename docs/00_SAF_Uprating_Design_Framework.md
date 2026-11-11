@@ -240,6 +240,8 @@ The draft's first action, "obtain the existing furnace specifications and operat
 
 > **WP1 produces a Reference Furnace Specification (RFS):** a complete, self-consistent description of the "existing" 55 MW furnace, built only from the brief [S], referenced literature [L], documented assumptions [A] and calculation [C]. At Gate G1 it is **frozen** and becomes the "existing furnace" for every WP. It is never described as real plant data.
 
+**Update (Rev 0.1):** the full draft RFS is now `docs/03_Reference_Furnace_Specification.md` (Rev A, for freezing at G1). The summary below is kept for reference; docs/03 governs.
+
 Provisional RFS contents. Entries marked ◐ are already established; the rest are WP1 tasks:
 
 | RFS item | Provisional value | Tag / source |
