@@ -9,6 +9,7 @@ BEngTech Metallurgical Engineering design assignment, working repository.
 | `calcs/parameters.py` | Single tagged input file | Live |
 | `calcs/02_electrical_operating_points.py` | Phase 2 calculation → `results/02_*` | Verified |
 | `calcs/00_screening_transformer_pf.py` | Screening check: PF needed for 60 MW within 65 MVA | Screening only |
+| `word/01_Engineering_Design_Basis.docx`, `word/02_Electrical_Design.docx` | Word versions of docs 01 and 02 (generated from the Markdown; the .md files remain the master copy) | Rev D / Rev A |
 | `references/REFERENCES.md` | Traceable reference register | Ongoing |
 | `START` | Original file (untouched) | — |
 
