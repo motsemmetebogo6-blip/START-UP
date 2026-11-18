@@ -1,167 +1,200 @@
-# WORK ALLOCATION: WHO DOES WHAT
+# WORK ALLOCATION: WHO DOES WHAT (Rev 1 – balanced)
 
 **Project:** Design and Scale-Up of a Closed Ferrochrome SAF from 55 MW to 60 MW Using 65 MVA Transformers and Optimised Electrode Geometry
-**Issued by:** Tebogo (Project Leader)
-**Document:** 06 (Rev 0), 2026-11-18
-**This document replaces the member codes M1–M6 used in documents 00 to 05 with names** (see Section 6).
+**Issued by:** Tebogo Motsemme (Project Leader)
+**Document:** 06 (Rev 1), 2026-11-18. **Replaces Rev 0 and the earlier group arrangement.**
+**Governs:** where documents 00 to 05 name a lead for a chapter, **this document takes precedence**.
 
 ---
 
-## 1. The team and their chapters
+## 1. Final allocation: every member carries the same load
 
-| Name | Role | Report chapters (lead) | Effort points* | Checks the work of |
+| Member | Lead chapters | Effort points* | Starts early with |
+|---|---|---|---|
+| **Tebogo Motsemme** | 15 Economic evaluation · 16 Sensitivity analysis · 17 Risk assessment | **7** | 17 (risk register) |
+| **Jeff** | 2 Problem definition · 7 Existing condition calculations · 10 Electrical analysis | **7** | 2 and 7 |
+| **Mkhonto** | 5 Assumptions · 8 Mass balance · 9 Energy balance | **7** | 5 and 8 |
+| **Ngesi** | 6 Literature review (editor) · 11 Process/metallurgical analysis · 12 Development of alternatives | **7** | 6 |
+| **Sibandze** | 4 Design basis · 13 Detailed calculations · 14 Equipment/design requirements | **7** | 4 |
+| **Simphiwe** | 1 Executive summary · 3 Existing process description · 18 Recommended design · 19 Implementation plan · 20 Conclusion | **7** | 3 |
+
+\*Effort points per chapter: Low = 1, Medium = 2, High = 3, Very high = 4 (Section 3). **All 20 chapters are allocated once, and the 42 points total are split exactly 7 per person.**
+
+**Everyone also:**
+* writes **one literature sub-section** for Chapter 6 (Section 5);
+* contributes **at least three risks** to Chapter 17;
+* names the input values for the sensitivity analysis (Chapter 16) from their own chapter;
+* checks one other member's work (Section 6).
+
+**Tebogo additionally** keeps the common registers and Python calculations, runs the gate reviews, builds the Power BI dashboard and does the final edit. These are leader duties and are not counted in the 7 points.
+
+---
+
+## 2. What was wrong with the previous arrangement, and what changed
+
+| Member | Previous chapters | Previous effort | New chapters | New effort |
 |---|---|---|---|---|
-| **Tebogo** | Project Leader; integration; Power BI dashboard | 1, 2, 4, 18, 20 + Power BI + final editing | 12 | Everyone (final sign-off) |
-| **Mkhonto** | Electrical and electrode engineer | 10, 12 | 7 | Jeff (Ch. 7) |
-| **Ngesi** | Metallurgist: mass and energy balances | 8, 9, 11 | 8 | Sibandze (Ch. 15) |
-| **Jeff** | Furnace, thermal and mechanical engineer | 7, 13, 14 | 7 | Mkhonto (Ch. 10) |
-| **Sibandze** | Literature review editor; economics; sensitivity | 6, 15, 16 | 7 | Ngesi (Ch. 8, 9) |
-| **Simphiwe** | Process description, assumptions, risk, implementation, references | 3, 5, 17, 19, References, Appendices | 8 (lower difficulty) | – (Tebogo checks her work) |
+| Motsemme | 3, 15, 16, 17 | 9 | 15, 16, 17 | 7 |
+| Ngesi | 2, 6, 12, 19 | 7 | 6, 11, 12 | 7 |
+| Simphiwe | 1, 18, 20 | **4** | 1, 3, 18, 19, 20 | 7 |
+| Sibandze | 4, 5, 14 | **5** | 4, 13, 14 | 7 |
+| Jeff | 7, 10, 11, 13 | **11** | 2, 7, 10 | 7 |
+| Mkhonto | 7, 8, 9, 13 | **11** | 5, 8, 9 | 7 |
 
-\*Effort points: Low = 1, Medium = 2, High = 3, Very high = 4. Everyone also writes one short literature sub-section (Section 4). Simphiwe has the same number of points as the others, but her chapters are **descriptive or template-based** rather than heavy calculation.
-
----
-
-## 2. All 20 sections at a glance
-
-| Ch. | Section | Lead | Supported by | Effort | Gate | Start from |
-|---|---|---|---|---|---|---|
-| 1 | Executive summary | **Tebogo** | All | Low (1) | G6 | Written last, from Ch. 18 |
-| 2 | Problem definition | **Tebogo** | – | Low (1) | G1 | Doc 00 §0–2 |
-| 3 | Existing process description | **Simphiwe** | Ngesi, Jeff | Medium (2) | G1 | Doc 03 §2 and §5 |
-| 4 | Design basis | **Tebogo** | – | Medium (2) | G1 | Doc 00 §6–7, doc 01 |
-| 5 | Assumptions | **Simphiwe** | All send new ones to Tebogo | Low (1) | G1 | Common Registers (Excel) |
-| 6 | Literature review | **Sibandze** (editor) | Everyone writes a sub-section | Medium (2) | G2 | Doc 05 |
-| 7 | Existing condition calculations | **Jeff** | Mkhonto | Medium (2) | G1 | Doc 03 (almost complete) |
-| 8 | Mass balance | **Ngesi** | – | High (3) | G3 | Doc 03 §5, refs R-18 to R-20 |
-| 9 | Energy balance | **Ngesi** | Jeff (heat losses) | High (3) | G3 | A-04, refs R-04, R-05, R-07 |
-| 10 | Electrical analysis (incl. electrodes) | **Mkhonto** | – | Very high (4) | G3 | Doc 02 (preliminary results) |
-| 11 | Process/metallurgical analysis | **Ngesi** | Mkhonto (electrode tips) | Medium (2) | G3 | Ch. 8 and 9 |
-| 12 | Development of alternatives | **Mkhonto** | Tebogo | High (3) | G3 | Doc 02 cases B0/B20/B30 |
-| 13 | Detailed calculations (thermal, mechanical) | **Jeff** | Mkhonto (13.1), Ngesi (13.4) | High (3) | G3 | All chapters 8–12 |
-| 14 | Equipment/design requirements | **Jeff** | All | Medium (2) | G4 | Equipment register |
-| 15 | Economic evaluation | **Sibandze** | Ngesi (production) | High (3) | G5 | Upgrade list in Ch. 14 |
-| 16 | Sensitivity analysis | **Sibandze** | Tebogo (Python) | Medium (2) | G5 | Critical assumptions A-04, A-17, A-18, A-22, A-23 |
-| 17 | Risk assessment | **Simphiwe** | Jeff (safety), all | Medium (2) | G5 | Template in Section 3 below |
-| 18 | Recommended design | **Tebogo** | All | Medium (2) | G5 | Ch. 12–17 |
-| 19 | Implementation plan | **Simphiwe** | Jeff, Mkhonto | Low (1) | G6 | Doc 00 §13, Ch. 14 |
-| 20 | Conclusion | **Tebogo** | – | Low (1) | G6 | Written last |
-| – | References | **Simphiwe** | All | Low (1) | G6 | Doc 05, reference register |
-| – | Appendices | **Simphiwe** | Tebogo (calculation printouts) | Low (1) | G6 | `calcs/`, `results/`, registers |
+**Problems fixed:**
+1. **Duplicates:** Chapters **7** and **13** were given to both Jeff and Mkhonto. Two people writing the same chapter causes conflicting numbers. Now **every chapter has exactly one lead**.
+2. **Uneven load:** effort ranged from **4 to 11 points**. Jeff and Mkhonto had four of the six heavy calculation chapters (8, 9, 10, 13), while Sibandze and Simphiwe had none. Now **everyone has 7 points**, and **five of the six members lead at least one heavy chapter**.
+3. **Idle time:** Simphiwe's previous chapters (1, 18, 20) can only be written **at the very end**, once everything else is finished. She now also has **Chapter 3**, which can start immediately, and **Chapter 19**.
+4. **Logical grouping:** related chapters now sit with one person, so the hand-overs are simpler:
+   * Mkhonto: assumptions + mass balance + energy balance (one consistent set of numbers).
+   * Jeff: problem definition + baseline calculations + electrical analysis (the core electrical argument).
+   * Ngesi: literature + process analysis + alternatives.
+   * Sibandze: design basis + detailed calculations + equipment requirements (the design itself).
+   * Tebogo: economics + sensitivity + risk (the decision evaluation).
+   * Simphiwe: the "story" of the report: summary, process description, recommended design, implementation and conclusion.
+5. **Continuity:** as many previous chapters as possible are kept, so work already started is not lost. Each member keeps at least one previous chapter.
 
 ---
 
-## 3. Task cards: what each person does
+## 3. All 20 chapters at a glance
 
-### Tebogo – Project Leader (Ch. 1, 2, 4, 18, 20 + Power BI + integration)
-* **Do:** write the problem definition and design basis first (G1). Keep the common registers and Python calculations up to date. Run the gate reviews. Build the Power BI dashboard (pages 01 Overview, 02 Electrical, 05 Feasibility, 06 Data provenance). Integrate everything into the recommended design. Write the executive summary and conclusion **last**.
-* **Read:** R-02, R-14, and all others for the audit.
-* **You receive from:** everyone (all interface results).
-* **First step:** set the gate dates in Section 7 and send this document with the team pack.
+| Ch. | Section | Lead | Supported by | Effort | Gate |
+|---|---|---|---|---|---|
+| 1 | Executive summary | **Simphiwe** | Tebogo | Low (1) | G6 |
+| 2 | Problem definition | **Jeff** | Tebogo | Low (1) | G1 |
+| 3 | Existing process description | **Simphiwe** | Mkhonto (chemistry), Jeff | Medium (2) | G1 |
+| 4 | Design basis | **Sibandze** | Tebogo | Medium (2) | G1 |
+| 5 | Assumptions | **Mkhonto** | Everyone sends new assumptions to Tebogo for the register | Low (1) | G1 |
+| 6 | Literature review | **Ngesi** (editor) | Everyone writes one sub-section | Medium (2) | G2 |
+| 7 | Existing condition calculations | **Jeff** | Sibandze | Medium (2) | G1 |
+| 8 | Mass balance | **Mkhonto** | – | High (3) | G3 |
+| 9 | Energy balance | **Mkhonto** | Sibandze (heat losses) | High (3) | G3 |
+| 10 | Electrical analysis (incl. electrodes) | **Jeff** | Ngesi (electrode geometry options) | Very high (4) | G3 |
+| 11 | Process/metallurgical analysis | **Ngesi** | Mkhonto | Medium (2) | G3 |
+| 12 | Development of alternatives | **Ngesi** | Jeff | High (3) | G3 |
+| 13 | Detailed calculations | **Sibandze** | Jeff (13.1 electrical), Mkhonto (13.4 metallurgical) | High (3) | G3 |
+| 14 | Equipment/design requirements | **Sibandze** | All | Medium (2) | G4 |
+| 15 | Economic evaluation | **Tebogo** | Mkhonto (production), Sibandze (upgrade list) | High (3) | G5 |
+| 16 | Sensitivity analysis | **Tebogo** | All (input ranges) | Medium (2) | G5 |
+| 17 | Risk assessment | **Tebogo** | All (three risks each) | Medium (2) | G5 |
+| 18 | Recommended design | **Simphiwe** | Sibandze, Ngesi, Tebogo | Medium (2) | G5 |
+| 19 | Implementation plan | **Simphiwe** | Sibandze | Low (1) | G6 |
+| 20 | Conclusion | **Simphiwe** | Tebogo | Low (1) | G6 |
+| – | References | **Ngesi** (as literature editor) | All | – | G6 |
+| – | Appendices | **Tebogo** (calculation printouts, registers) | All | – | G6 |
 
-### Mkhonto – Electrical and electrodes (Ch. 10, 12)
-* **Do:** Chapter 10 has two halves:
-  * **Electrical (10.1–10.5):** equivalent circuit; transformer loading (PF ≥ 0.923); operating chart; reactance breakdown (check the implied 16 % transformer reactance); losses and efficiency.
-  * **Electrodes (10.6–10.9):** current density; how PCD and electrode tip position change the resistance (show how to get the required +21 %); paste consumption.
-  * **Chapter 12:** compare the alternatives B0, B20, B30, different PCDs, and "do nothing / maximum MW", then justify the choice.
-* **Read first:** R-13 (most important), R-01, R-02, R-14, R-15, then R-03, R-08, R-09, R-12, R-16, R-17.
-* **Hand over:** required R, X, I and V to Jeff and Ngesi (by G2); electrode tip position to Jeff and Ngesi (by G3).
-* **First step:** confirm the 48 MW / 1.55 m / 110 kA values in R-13, then review doc 02.
+---
 
-### Ngesi – Metallurgy (Ch. 8, 9, 11)
-* **Do:** Chapter 8 is the mass balance: per tonne of alloy, then per day at 55 and 60 MW; Cr, Fe, Si, C and O balances; slag and off-gas; Cr recovery. Chapter 9 is the energy balance: calculate the specific energy (MWh/t) instead of assuming it, and include the preheating effect. Chapter 11 covers slag chemistry, slag–metal separation, Cr recovery and the effect of shallower electrode tips.
-* **Read first:** R-18 (check the feed analysis), R-19, R-20, R-04, R-05, R-07; find R-10 (alloy specification) and thermodynamic data (gap G-07).
-* **Hand over:** production rate, slag and off-gas volumes to Jeff and Sibandze (by G3); heat to cooling water to Jeff.
-* **First step:** confirm the LG6 analysis in R-18 and find a charge-chrome alloy specification.
+## 4. Task cards
 
-### Jeff – Furnace, thermal and mechanical (Ch. 7, 13, 14)
-* **Do:** Chapter 7 writes up the 55 MW baseline calculations from doc 03 (mostly done; turn it into report form and close the open items: hearth depth, tap-holes, roof). Chapter 13 covers the detailed calculations for the chosen design: thermal (cooling-water heat removal, refractory heat flux, hearth power density 0.59 → 0.65 MW/m²) and mechanical (shell, roof, electrode holders, conductor forces), and collects Mkhonto's and Ngesi's 60 MW results. Chapter 14 is the final Retain/Optimise/Upgrade table and specifications for the upgrades.
-* **Read first:** R-11, R-16, R-17; find refractory and cooling data (gaps G-04 to G-06).
-* **Hand over:** the upgrade list to Sibandze (economics) and Simphiwe (implementation, risk) by G4.
-* **First step:** read doc 03 (Reference Furnace Specification) and propose acceptance limits for cooling (DC-06) and refractory (DC-07).
+### Tebogo Motsemme – Ch. 15, 16, 17 (+ leader duties)
+* **Ch. 15 Economic evaluation:** capital cost of the Upgrade items; value of the extra production (about +34 t/d); extra electricity, reductant and paste costs; NPV, payback and IRR.
+* **Ch. 16 Sensitivity analysis:** vary the critical assumptions (A-22 auxiliary margin, A-23 tap range, A-17 reactance reduction, A-18 C₃, A-04 SEC, electricity price); tornado chart; when does the decision change?
+* **Ch. 17 Risk assessment:** risk register (likelihood × consequence), including the **water-leak explosion hazard** in a closed furnace. Collect three risks from each member.
+* **Leader:** registers, Python calculations, gate reviews, Power BI, Appendices, final edit.
+* **Receives:** production (Mkhonto), upgrade list (Sibandze), risks (all).
+* **Read:** R-05; gaps G-08, G-09 (cost and price data).
+* **First step:** set the gate dates (Section 8) and start the risk register.
 
-### Sibandze – Literature, economics, sensitivity (Ch. 6, 15, 16)
-* **Do:** Chapter 6: collect everyone's literature sub-sections and turn them into one critical review (Section 4). Chapter 15: capital cost of the upgrades, the value of the extra production (about +34 t/d), extra running costs, then NPV, payback and IRR. Chapter 16: vary the critical assumptions (auxiliary margin, tap range, reactance reduction, C₃, SEC, electricity price) and show which ones change the decision (tornado chart).
-* **Read first:** doc 05 (the whole literature map), R-05; find cost and price data (gaps G-08, G-09).
-* **You receive:** production from Ngesi; the upgrade list from Jeff.
-* **First step:** set up the Chapter 6 outline and send each member the deadline for their sub-section.
+### Jeff – Ch. 2, 7, 10
+* **Ch. 2 Problem definition:** the governing question; brownfield philosophy (retain, optimise, verify); constraints; why 65 MVA forces PF ≥ 0.923 (from docs 00 and 01).
+* **Ch. 7 Existing condition calculations:** turn the Reference Furnace Specification (doc 03) into report form: electrical operating point, transformer currents, electrode current density, geometry, production, consistency checks. Close the open items (hearth depth, tap-holes).
+* **Ch. 10 Electrical analysis:** equivalent circuit; transformer loading; operating chart; reactance breakdown (check the implied 16 % transformer reactance); losses; electrode current density; how PCD and electrode tip position give the required +21 % resistance; paste consumption.
+* **Hands over:** required R, X, current and voltage to Ngesi, Sibandze and Mkhonto (by G2).
+* **Read first:** **R-13** (most important), R-01, R-02, R-14, R-15, R-08, R-09.
+* **First step:** confirm the 48 MW / 1.55 m / 110 kA values in R-13; review docs 02 and 03.
 
-### Simphiwe – Description, assumptions, risk, implementation, references (Ch. 3, 5, 17, 19, References, Appendices)
-Simphiwe's chapters mostly use material that already exists, so she can follow these steps.
-* **Chapter 3 – Existing process description:**
+### Mkhonto – Ch. 5, 8, 9
+* **Ch. 5 Assumptions:** the full assumptions table from the common register (A-01 to A-23 and any new ones), plus an explanation of the four critical assumptions. Coordinate with Tebogo, who keeps the master register.
+* **Ch. 8 Mass balance:** per tonne of alloy, then per day at 55 and 60 MW; Cr, Fe, Si, C and O balances; alloy, slag and off-gas; Cr recovery; reductant requirement.
+* **Ch. 9 Energy balance:** calculate the specific energy (MWh/t) instead of assuming it; reaction heats; sensible heat of products; heat losses (from Sibandze); the preheating effect.
+* **Hands over:** production, slag and off-gas volumes to Ngesi, Sibandze and Tebogo; heat to cooling water to Sibandze (by G3).
+* **Read first:** **R-18** (confirm the feed analysis), R-19, R-20, R-04, R-05, R-07; find R-10 (alloy specification) and thermodynamic data (G-07).
+* **First step:** confirm the LG6 analysis and find a charge-chrome alloy specification.
+
+### Ngesi – Ch. 6, 11, 12 (+ References)
+* **Ch. 6 Literature review:** edit the six sub-sections into one critical review, and write sub-section 6.3 yourself.
+* **Ch. 11 Process/metallurgical analysis:** slag chemistry (basicity 0.83, MgO/Al₂O₃ 0.88); slag–metal separation; Cr recovery; the effect of shallower electrode tips; product quality.
+* **Ch. 12 Development of alternatives:** compare B0 (resistance only, 367 V), **B20 (reactance −20 % and resistance +21 %)**, B30, PCD options (PCD/D 2.7 to 3.0), and "do nothing / maximum MW". Use a comparison matrix against the acceptance criteria, then make a justified choice.
+* **References:** one Harvard-style list of all sources used (from doc 05).
+* **Read first:** doc 05 (whole), R-16, R-17, R-03, R-19, R-20.
+* **First step:** send each member their literature sub-section and a deadline.
+
+### Sibandze – Ch. 4, 13, 14
+* **Ch. 4 Design basis:** Scenario A and Scenario B definitions; units; standards (IEC 60076-1, IEEE C57.17, IEC 60909, NRS 048-2); the acceptance criteria DC-01 to DC-13 with justified limits (from docs 00 and 01).
+* **Ch. 13 Detailed calculations for the chosen alternative:** thermal (cooling-water heat removal, refractory heat flux, hearth power density 0.59 → 0.65 MW/m²) and mechanical (shell, roof, electrode holders, conductor forces). Collect Jeff's 13.1 and Mkhonto's 13.4. End each section with a pass/fail verdict against its criterion.
+* **Ch. 14 Equipment/design requirements:** the final Retain/Optimise/Upgrade table (EQ-01 to EQ-13) and a specification for each upgrade.
+* **Hands over:** heat losses to Mkhonto (Ch. 9); the upgrade list to Tebogo and Simphiwe (by G4).
+* **Read first:** R-11, R-16, R-17; refractory and cooling data (gaps G-04 to G-06); standards.
+* **First step:** write Chapter 4 from doc 00 §6–7; propose the cooling (DC-06) and refractory (DC-07) limits.
+
+### Simphiwe – Ch. 1, 3, 18, 19, 20
+Five chapters, but each is short or uses existing material. Clear steps:
+* **Ch. 3 Existing process description (start now):**
   1. Read doc 03, Sections 2 and 5.
-  2. Describe the process in words: chromite pellets + reductant + flux → closed furnace → alloy + slag + gas.
-  3. Draw a simple block flow diagram (boxes and arrows) and a top-view sketch of the three electrodes on the pitch circle.
-  4. Add a table of the feed and slag compositions (copy from doc 03).
-  5. Ask Ngesi to check the chemistry.
-* **Chapter 5 – Assumptions:** copy the Assumptions sheet from the Common Registers Excel into a report table. Write one paragraph explaining the four critical assumptions (A-17, A-18, A-22, A-23). Before submitting, ask Tebogo for the latest register.
-* **Chapter 17 – Risk assessment:** use this template. Ask Jeff for help with the safety risks.
-
-| Risk | Cause | Likelihood (1–5) | Consequence (1–5) | Risk score | Mitigation | Owner |
-|---|---|---|---|---|---|---|
-| Water leak into the furnace | Cooling panel failure | … | 5 | … | … | Jeff |
-
-* **Chapter 17 (continued):** include at least: water leak (explosion hazard); roof or gas blow-out; electrode breakage; tap-hole failure; transformer overloading; unstable electrode control; lower Cr recovery; cost overrun; shutdown taking longer than planned.
-* **Chapter 19 – Implementation plan:** a step-by-step list of how the upgrade would be done: (1) order the equipment; (2) shutdown and install; (3) commission; (4) raise power in steps 55 → 57.5 → 60 MW, with checks at each step; (5) monitor the KPIs (MVA loading, power factor, electrode current, cooling temperatures, Cr recovery, energy use). Use Jeff's upgrade list (Ch. 14).
-* **References:** keep one Harvard-style list of every source used, based on doc 05. Check that every R-number cited in the report is on the list.
-* **Appendices:** collect the calculation printouts (from Tebogo), the registers and the drawings in order.
-* **Read:** doc 03, doc 05, R-06, R-11.
+  2. Describe the process: chromite pellets + reductant + flux → closed furnace → alloy + slag + gas.
+  3. Draw a block flow diagram and a top-view sketch of the three electrodes on the pitch circle.
+  4. Add the feed and slag composition tables.
+  5. Ask Mkhonto to check the chemistry.
+* **Ch. 19 Implementation plan:** the steps to carry out the upgrade: (1) order equipment; (2) shutdown and installation; (3) commissioning; (4) raise power in steps 55 → 57.5 → 60 MW with checks; (5) KPIs to monitor (MVA loading, PF, electrode current, cooling temperatures, Cr recovery, energy use). Use Sibandze's upgrade list.
+* **Ch. 18 Recommended design:** one chapter that brings the chosen design together: operating point (MW, MVA, PF, kA, V), electrode geometry, upgrades, performance, and how each acceptance criterion is met. Take it from Ngesi's Ch. 12, Sibandze's Ch. 13–14 and Tebogo's Ch. 15–17.
+* **Ch. 1 Executive summary and Ch. 20 Conclusion:** write these **last**. One to two pages summarising the problem, approach, key numbers, recommendation, cost and risks. The conclusion answers the governing question directly. Tebogo reviews both.
+* **Read:** docs 00, 03 and 05; R-06, R-11.
 * **First step:** start Chapter 3. It needs only doc 03.
 
 ---
 
-## 4. Literature review (Chapter 6): one sub-section each
+## 5. Literature review (Chapter 6): one sub-section each
 
 | Sub-section | Topic | Writer | Main sources |
 |---|---|---|---|
-| 6.1 | Ferrochrome production and closed-furnace technology | Ngesi | R-05, R-06, R-07, R-18 |
-| 6.2 | SAF electrical theory: resistance, reactance, PF, Westly scale-up | Mkhonto | R-01, R-02, R-03, R-12, R-14 |
-| 6.3 | Söderberg electrodes, current density, PCD | Mkhonto | R-08, R-09, R-13, R-16, R-17 |
-| 6.4 | Refractory, cooling and heat losses | Jeff | R-11 + gaps G-04 to G-06 |
+| 6.1 | Ferrochrome production and closed-furnace technology | Mkhonto | R-05, R-06, R-07, R-18 |
+| 6.2 | SAF electrical theory: resistance, reactance, PF, Westly scale-up | Jeff | R-01, R-02, R-03, R-12, R-13, R-14 |
+| 6.3 | Söderberg electrodes, current density and furnace geometry | Ngesi | R-08, R-09, R-16, R-17 |
+| 6.4 | Refractory, cooling and heat losses | Sibandze | R-11 + gaps G-04 to G-06 |
 | 6.5 | Brownfield furnace uprating and process description | Simphiwe | R-06, R-11 |
-| 6.6 | Economic evaluation of furnace upgrades | Sibandze | Gaps G-08, G-09 |
-| – | Editing, linking, critical comparison | Sibandze | All |
+| 6.6 | Economic evaluation and risk in furnace upgrades | Tebogo | Gaps G-08, G-09 |
+| – | Editing and critical comparison | Ngesi | All |
 
-Each sub-section is about 1–2 pages. **Compare** the sources and say where they disagree; don't just summarise them.
+About 1–2 pages each. **Compare** the sources and point out disagreements; don't just summarise.
 
 ---
 
-## 5. Who hands what to whom
+## 6. Checking pairs (everyone checks someone)
+
+| Author | Work checked by | Why this pair |
+|---|---|---|
+| Jeff (2, 7, 10) | Sibandze | Sibandze uses Jeff's electrical results in Ch. 13 |
+| Sibandze (4, 13, 14) | Jeff | Jeff supplies section 13.1 |
+| Mkhonto (5, 8, 9) | Ngesi | Ngesi uses the mass balance in Ch. 11 |
+| Ngesi (6, 11, 12) | Mkhonto | Mkhonto supplies the metallurgical inputs |
+| Simphiwe (1, 3, 18, 19, 20) | Tebogo | Leader review of the summary chapters |
+| Tebogo (15, 16, 17) | Simphiwe | Simphiwe uses these results in Ch. 18 |
+
+The checker re-calculates the key results independently and signs "checked by / date" at the end of the chapter.
+
+---
+
+## 7. Who hands what to whom
 
 | From | To | What | By gate |
 |---|---|---|---|
-| Tebogo | All | Frozen baseline (doc 03) and registers | G1 |
-| Mkhonto | Jeff, Ngesi | Required R, X, current and voltage for 60 MW | G2 |
-| Mkhonto | Jeff, Ngesi | Electrode tip position and PCD | G3 |
-| Ngesi | Jeff | Heat to cooling water, off-gas volume | G3 |
-| Ngesi | Sibandze | Production rate at 55 and 60 MW, energy use | G3 |
-| Jeff | Sibandze, Simphiwe | Final upgrade list (Retain/Optimise/Upgrade) | G4 |
-| Everyone | Simphiwe | Sources used (for References) | G6 |
-| Everyone | Tebogo | New assumptions, as soon as they arise | Ongoing |
+| Tebogo | All | Frozen baseline (doc 03), registers, this allocation | G1 |
+| Jeff | Ngesi, Sibandze, Mkhonto | Required R, X, current, voltage; electrode tip position and PCD | G2 / G3 |
+| Mkhonto | Ngesi, Sibandze, Tebogo | Production rate, slag and off-gas volumes, specific energy | G3 |
+| Sibandze | Mkhonto | Heat losses (cooling water, shell, roof) | G3 |
+| Ngesi | Sibandze, Simphiwe | Chosen alternative (Ch. 12) | G3 |
+| Sibandze | Tebogo, Simphiwe | Final upgrade list (Retain/Optimise/Upgrade) | G4 |
+| Tebogo | Simphiwe | Economics, sensitivity and risk results | G5 |
+| Everyone | Tebogo | New assumptions (as they arise); three risks each | Ongoing / G5 |
 
 ---
 
-## 6. Name replaces member code (for documents 00 to 05)
-
-| Code in docs 00–05 | Now |
-|---|---|
-| PL – Project Leader | Tebogo |
-| M1 – furnace / mechanical | Jeff |
-| M2 – electrical | Mkhonto |
-| M3 – electrodes | Mkhonto |
-| M4 – thermal / refractory | Jeff (risk assessment moves to Simphiwe) |
-| M5 – metallurgy | Ngesi |
-| M6 – Power BI / integration | Tebogo |
-| M6 – economics / sensitivity | Sibandze |
-| (new) – description, assumptions, risk, implementation, references | Simphiwe |
-
----
-
-## 7. Gate dates (to be set by Tebogo)
+## 8. Gate dates (to be set by Tebogo)
 
 | Gate | What is due | Date |
 |---|---|---|
-| G0 | Everyone confirms they have read the team pack and accept their chapters | ____ |
+| G0 | Everyone accepts this allocation | ____ |
 | G1 | Ch. 2, 3, 4, 5, 7 drafts; baseline frozen | ____ |
 | G2 | Ch. 6 sub-sections; each person presents their method | ____ |
 | G3 | Ch. 8 to 13 calculated and checked | ____ |
