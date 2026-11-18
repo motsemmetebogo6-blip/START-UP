@@ -5,7 +5,7 @@ BEngTech Metallurgical Engineering design assignment, working repository.
 | Path | Content | Status |
 |---|---|---|
 | `docs/00_SAF_Uprating_Design_Framework.md` | **Controlling document**: governing question, WP1–WP10, gates G0–G6, team allocation, interfaces, acceptance criteria, equipment classification, Power BI architecture | Rev 0 – for team approval (G0) |
-| `docs/06_Work_Allocation.md`, `docs/06a_Work_Allocation_One_Page.md` | **Who does what** (Rev 5; Ch. 1, 18, 20 by compiler); one-page summary + detailed task cards | Rev 5 – issued |
+| `docs/06_Work_Allocation.md`, `docs/06a_Work_Allocation_One_Page.md` | **Who does what** (Rev 6; no separate compiler, Tebogo assembles); one-page summary + detailed task cards | Rev 6 – proposed, for Tebogo to confirm |
 | `docs/05_Literature_and_Evidence_Map.md` | Every source: link, what we took, where used, who checks it; gaps; download checklist | Rev 0 – issued |
 | `references/papers/` | Shared folder for downloaded PDFs (R-xx_Author_Year.pdf) | Empty – awaiting downloads |
 | `docs/04_Team_Work_Basis_and_Report_Structure.md` | **Team briefing**: what we work from, common numbers, rules, 20-chapter report structure with owners | Rev 0 – issued |
