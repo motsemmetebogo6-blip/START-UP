@@ -4,8 +4,8 @@ Every chapter has exactly one lead.
 
 | Member | Chapters | Points |
 |---|---|---|
-| **Tebogo Motsemme** | 2 Problem definition · 4 Design basis · 7 Existing condition calculations · 12 Development of alternatives | 8 |
-| **Jeff** | 10 Electrical analysis · 13 Detailed calculations | 7 |
+| **Tebogo Motsemme** | 4 Design basis · 7 Existing condition calculations · 12 Development of alternatives | 7 |
+| **Jeff** | 2 Problem definition · 10 Electrical analysis · 13 Detailed calculations | 8 |
 | **Mkhonto** | 5 Assumptions · 6 Literature review (editor) · 8 Mass balance | 6 |
 | **Ngesi** | 9 Energy balance · 11 Process/metallurgical analysis · 19 Implementation plan | 6 |
 | **Sibandze** | 14 Equipment/design requirements · 15 Economic evaluation | 5 |

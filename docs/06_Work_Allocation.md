@@ -1,8 +1,8 @@
-# WORK ALLOCATION: WHO DOES WHAT (Rev 4)
+# WORK ALLOCATION: WHO DOES WHAT (Rev 5)
 
 **Project:** Design and Scale-Up of a Closed Ferrochrome SAF from 55 MW to 60 MW Using 65 MVA Transformers and Optimised Electrode Geometry
 **Issued by:** Tebogo Motsemme (Project Leader)
-**Document:** 06 (Rev 4), 2026-11-18. **Replaces all previous allocations.**
+**Document:** 06 (Rev 5), 2026-11-18. **Replaces all previous allocations.**
 **Governs:** where documents 00 to 05 name a lead for a chapter, **this document takes precedence**.
 
 ---
@@ -11,8 +11,8 @@
 
 | Member | Lead chapters | Effort points* |
 |---|---|---|
-| **Tebogo Motsemme** | 2 Problem definition · 4 Design basis · 7 Existing condition calculations · 12 Development of alternatives | **8** |
-| **Jeff** | 10 Electrical analysis · 13 Detailed calculations | **7** |
+| **Tebogo Motsemme** | 4 Design basis · 7 Existing condition calculations · 12 Development of alternatives | **7** |
+| **Jeff** | 2 Problem definition · 10 Electrical analysis · 13 Detailed calculations | **8** |
 | **Mkhonto** | 5 Assumptions · 6 Literature review (editor) · 8 Mass balance | **6** |
 | **Ngesi** | 9 Energy balance · 11 Process/metallurgical analysis · 19 Implementation plan | **6** |
 | **Sibandze** | 14 Equipment/design requirements · 15 Economic evaluation | **5** |
@@ -37,7 +37,7 @@
 | Ch. | Section | Lead | Supported by | Effort | Gate |
 |---|---|---|---|---|---|
 | 1 | Executive summary | Compiler | All | – | G6 |
-| 2 | Problem definition | **Tebogo** | – | Low (1) | G1 |
+| 2 | Problem definition | **Jeff** | Tebogo | Low (1) | G1 |
 | 3 | Existing process description | **Simphiwe** | Mkhonto (chemistry) | Medium (2) | G1 |
 | 4 | Design basis | **Tebogo** | Sibandze | Medium (2) | G1 |
 | 5 | Assumptions | **Mkhonto** | Everyone sends new assumptions to Tebogo for the register | Low (1) | G1 |
@@ -63,20 +63,20 @@
 
 ## 3. Task cards
 
-### Tebogo Motsemme – Ch. 2, 4, 7, 12 (+ leader duties)
-* **Ch. 2 Problem definition:** the governing question; brownfield philosophy (retain, optimise, verify); constraints; why 65 MVA forces PF ≥ 0.923.
+### Tebogo Motsemme – Ch. 4, 7, 12 (+ leader duties)
 * **Ch. 4 Design basis:** Scenario A and Scenario B; units; standards (IEC 60076-1, IEEE C57.17, IEC 60909, NRS 048-2); acceptance criteria DC-01 to DC-13 with justified limits.
 * **Ch. 7 Existing condition calculations:** the 55 MW baseline in report form (from doc 03): electrical operating point, transformer currents, electrode current density, geometry, production, consistency checks; close the open items (hearth depth, tap-holes).
 * **Ch. 12 Development of alternatives:** compare **B0** (raise resistance only; needs 367 V, so a transformer upgrade), **B20** (reactance −20 % plus resistance +21 %), **B30** (mainly reduce reactance), PCD options (PCD/D 2.7 to 3.0), and "do nothing / maximum MW". Comparison matrix against DC-01 to DC-13, cost and risk; justified choice.
 * **Read first:** docs 00, 01, 02, 03; R-02, R-11, R-13, R-14, R-15; standards.
-* **First step:** set the gate dates (Section 7); draft Ch. 2 and 4 for G1.
+* **First step:** set the gate dates (Section 7); draft Ch. 4 and 7 for G1.
 
-### Jeff – Ch. 10, 13
+### Jeff – Ch. 2, 10, 13
+* **Ch. 2 Problem definition:** the governing question; brownfield philosophy (retain, optimise, verify); constraints; why 65 MVA forces PF ≥ 0.923.
 * **Ch. 10 Electrical analysis:** equivalent circuit; transformer loading; operating chart; reactance breakdown (check the implied 16 % transformer reactance); losses; electrode current density; how PCD and electrode tip position give the required +21 % resistance; paste consumption.
 * **Ch. 13 Detailed calculations for the chosen alternative:** electrical (13.1), thermal (cooling-water heat removal, refractory heat flux, hearth power density 0.59 → 0.65 MW/m²) and mechanical (shell, roof, electrode holders, conductor forces). Collect Ngesi's 13.4 metallurgical section. End each section with a pass/fail verdict against its criterion.
 * **Hands over:** required R, X, current and voltage to Tebogo, Ngesi and Sibandze (by G2); heat losses to Ngesi (Ch. 9); detailed results to Sibandze for Ch. 14 (by G3).
 * **Read first:** **R-13** (most important), R-01, R-02, R-14, R-15, R-08, R-09, R-11, R-17; refractory and cooling data (gaps G-04 to G-06).
-* **First step:** confirm the 48 MW / 1.55 m / 110 kA values in R-13; review docs 02 and 03.
+* **First step:** draft Ch. 2 for G1 (from docs 00 and 01); confirm the 48 MW / 1.55 m / 110 kA values in R-13; review docs 02 and 03.
 
 ### Mkhonto – Ch. 5, 6, 8 (+ References)
 * **Ch. 5 Assumptions:** the full assumptions table from the common register, with an explanation of the four critical assumptions (A-17, A-18, A-22, A-23). Coordinate with Tebogo, who keeps the master register.
@@ -135,11 +135,11 @@ Written at final integration, after all other chapters are checked:
 
 | Author | Checked by | Why this pair |
 |---|---|---|
-| Jeff (10, 13) | Sibandze | Sibandze builds Ch. 14 on Jeff's detailed calculations |
+| Jeff (2, 10, 13) | Sibandze | Sibandze builds Ch. 14 on Jeff's detailed calculations |
 | Sibandze (14, 15) | Jeff | Jeff supplies the design results the equipment and costs are based on |
 | Mkhonto (5, 6, 8) | Ngesi | Ngesi's energy balance is built on the mass balance |
 | Ngesi (9, 11, 19) | Mkhonto | Mkhonto supplies the mass balance |
-| Tebogo (2, 4, 7, 12) | Simphiwe | Simphiwe's sensitivity analysis tests Tebogo's basis and choice |
+| Tebogo (4, 7, 12) | Simphiwe | Simphiwe's sensitivity analysis tests Tebogo's basis and choice |
 | Simphiwe (3, 16, 17) | Tebogo | Tebogo supplies the Python model for Ch. 16 |
 
 ---
