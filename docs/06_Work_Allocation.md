@@ -43,15 +43,15 @@
 
 **Problems fixed:**
 1. **Duplicates:** Chapters **7** and **13** were given to both Jeff and Mkhonto. Two people writing the same chapter causes conflicting numbers. Now **every chapter has exactly one lead**.
-2. **Uneven load:** effort ranged from **4 to 11 points**. Jeff and Mkhonto had four of the six heavy calculation chapters (8, 9, 10, 13), while Sibandze and Simphiwe had none. Now **everyone has 7 points**, and **five of the six members lead at least one heavy chapter**.
-3. **Idle time:** Simphiwe's previous chapters (1, 18, 20) can only be written **at the very end**, once everything else is finished. She now also has **Chapter 3**, which can start immediately, and **Chapter 19**.
+2. **Uneven load:** effort ranged from **4 to 11 points**. Jeff and Mkhonto carried four of the six heavy calculation chapters (8, 9, 10, 13) between them. Now **everyone has 7 points**.
+3. **Work spread across the whole project:** Chapters 1, 18 and 20 can only be finalised at the end. The integration role therefore also includes **Chapter 3** (at the start) and **Chapter 19** (implementation), so every member has work in every phase.
 4. **Logical grouping:** related chapters now sit with one person, so the hand-overs are simpler:
    * Mkhonto: assumptions + mass balance + energy balance (one consistent set of numbers).
    * Jeff: problem definition + baseline calculations + electrical analysis (the core electrical argument).
    * Ngesi: literature + process analysis + alternatives.
    * Sibandze: design basis + detailed calculations + equipment requirements (the design itself).
    * Tebogo: economics + sensitivity + risk (the decision evaluation).
-   * Simphiwe: the "story" of the report: summary, process description, recommended design, implementation and conclusion.
+   * Simphiwe: design integration and reporting: process description, the recommended design that combines everyone's results, the implementation plan, and the executive summary and conclusion.
 5. **Continuity:** as many previous chapters as possible are kept, so work already started is not lost. Each member keeps at least one previous chapter.
 
 ---
@@ -128,19 +128,14 @@
 * **Read first:** R-11, R-16, R-17; refractory and cooling data (gaps G-04 to G-06); standards.
 * **First step:** write Chapter 4 from doc 00 §6–7; propose the cooling (DC-06) and refractory (DC-07) limits.
 
-### Simphiwe – Ch. 1, 3, 18, 19, 20
-Five chapters, but each is short or uses existing material. Clear steps:
-* **Ch. 3 Existing process description (start now):**
-  1. Read doc 03, Sections 2 and 5.
-  2. Describe the process: chromite pellets + reductant + flux → closed furnace → alloy + slag + gas.
-  3. Draw a block flow diagram and a top-view sketch of the three electrodes on the pitch circle.
-  4. Add the feed and slag composition tables.
-  5. Ask Mkhonto to check the chemistry.
+### Simphiwe – Ch. 1, 3, 18, 19, 20 (design integration and reporting)
+* **Ch. 3 Existing process description:** the reference 55 MW furnace and its process (chromite pellets + reductant + flux → closed SAF → alloy + slag + CO gas); the main reduction reactions; furnace construction (shell, lining, roof, three Söderberg electrodes, transformers, short network); feed, product and slag; auxiliaries. Include a block flow diagram and an electrode layout sketch on the pitch circle. Based on doc 03; chemistry agreed with Mkhonto.
 * **Ch. 19 Implementation plan:** the steps to carry out the upgrade: (1) order equipment; (2) shutdown and installation; (3) commissioning; (4) raise power in steps 55 → 57.5 → 60 MW with checks; (5) KPIs to monitor (MVA loading, PF, electrode current, cooling temperatures, Cr recovery, energy use). Use Sibandze's upgrade list.
 * **Ch. 18 Recommended design:** one chapter that brings the chosen design together: operating point (MW, MVA, PF, kA, V), electrode geometry, upgrades, performance, and how each acceptance criterion is met. Take it from Ngesi's Ch. 12, Sibandze's Ch. 13–14 and Tebogo's Ch. 15–17.
-* **Ch. 1 Executive summary and Ch. 20 Conclusion:** write these **last**. One to two pages summarising the problem, approach, key numbers, recommendation, cost and risks. The conclusion answers the governing question directly. Tebogo reviews both.
-* **Read:** docs 00, 03 and 05; R-06, R-11.
-* **First step:** start Chapter 3. It needs only doc 03.
+* **Ch. 1 Executive summary and Ch. 20 Conclusion:** finalised last. They state the problem, approach, key numbers, recommendation, cost, risks and the feasibility decision, and answer the governing question directly.
+* **Receives:** chosen alternative (Ngesi), upgrade list (Sibandze), economics, sensitivity and risk (Tebogo).
+* **Read first:** docs 00, 03 and 05; R-06, R-11, R-02.
+* **First step:** draft Chapter 3 from doc 03 and set up the structure of Chapter 18 so each member knows which results it needs from them.
 
 ---
 
@@ -168,7 +163,7 @@ About 1–2 pages each. **Compare** the sources and point out disagreements; don
 | Sibandze (4, 13, 14) | Jeff | Jeff supplies section 13.1 |
 | Mkhonto (5, 8, 9) | Ngesi | Ngesi uses the mass balance in Ch. 11 |
 | Ngesi (6, 11, 12) | Mkhonto | Mkhonto supplies the metallurgical inputs |
-| Simphiwe (1, 3, 18, 19, 20) | Tebogo | Leader review of the summary chapters |
+| Simphiwe (1, 3, 18, 19, 20) | Tebogo | Ch. 18 integrates every member's results; leader sign-off |
 | Tebogo (15, 16, 17) | Simphiwe | Simphiwe uses these results in Ch. 18 |
 
 The checker re-calculates the key results independently and signs "checked by / date" at the end of the chapter.
