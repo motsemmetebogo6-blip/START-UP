@@ -1,0 +1,10 @@
+Criterion,Weight_%,E2,P1,P2,C1
+Production capability against 450 t/d,25,2,3,5,4
+Compliance with 60 MW brief,15,5,1,1,5
+Capital cost (lower is better),20,4,3,1,3
+Technical risk (lower is better),15,3,3,2,3
+Impact on existing infrastructure,15,4,3,1,3
+Technology maturity,10,5,4,3,4
+Weighted score (out of 5),100,3.6,2.8,2.35,3.65
+Sensitivity: capital-cost weight 35 %,100,3.69,2.94,2.03,3.43
+Sensitivity: equal weights,100,3.83,2.83,2.17,3.67
