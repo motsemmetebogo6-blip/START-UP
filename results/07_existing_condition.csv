@@ -1,0 +1,58 @@
+Group,Item,Value,Unit,Tag,Basis
+Electrical,Transformer rating S,65.0,MVA,S/WB,workbook: fixed constraint
+Electrical,Power factor,0.93,-,A/WB,workbook: accepted by supervisor (<=0.95 acceptable)
+Electrical,Load factor,0.95,-,C/WB,"workbook: back-solved, not measured"
+Electrical,On-load active power P = S·PF,60.45,MW,C,65 x 0.93
+Electrical,On-load reactive power Q = S·sinφ,23.8914,Mvar,C,65 x sin(acos 0.93)
+Electrical,Mean active power P = S·PF·LF,57.4275,MW,C,workbook 57.43
+Electrical,Mean phase power P/3,19.1425,MW,C,balanced
+Electrical,Energy per day,1378.26,MWh/d,C,workbook 1378.3
+Electrical,Transformer loading on load,100.0,%,C,S at rating
+Electrical,R/X = tanφ⁻¹ = PF/sqrt(1-PF²),2.5302,-,C,
+Electrical,Implied bath-to-total power if brief '55 MW' is bath power,0.9577,-,C,reconciliation option A
+Electrical,"Electrode current (Westly C3 = 8.33, A-18)",128.2811,kA,A/C,no secondary data in workbook
+Electrical,Secondary voltage (line),292.5432,V,C,S/(sqrt3 I)
+Electrical,Operating resistance per phase,1.2245,mohm,C,P/(3I²)
+Electrical,Reactance per phase,0.4839,mohm,C,R·tanφ
+Electrical,"Electrode current density (D = 1.55 m, A-16)",6.7984,A/cm2,C,I/A
+Electrical,Primary line current at 132 kV,284.3013,A,C,A-21
+Electrical,Primary line current at 88 kV,426.4519,A,C,A-21
+Production,Specific energy (cold sintered pellets),3.5,MWh/t,S/WB,confirmed by supervisor
+Production,Production calculated = E/SEC,393.7886,t/d,C,1378.3/3.5
+Production,Production supplied (actual),393.65,t/d,S/WB,supervisor 393.5-393.8
+Production,Difference calc vs supplied,0.0352,%,C,consistency check
+Production,Annual production,143.6823,kt/a,C,x365
+Production,Production target (not achieved),450.0,t/d,S/WB,bottleneck
+Production,SEC required for 450 t/d at 57.43 MW,3.0628,MWh/t,C,workbook 3.06
+Feed,Ore blend Cr2O3 (%) (80 % pellets / 20 % lumpy),39.538,%,C,recipe-weighted
+Feed,Ore blend FeO (%) (80 % pellets / 20 % lumpy),24.65,%,C,recipe-weighted
+Feed,Ore blend Al2O3 (%) (80 % pellets / 20 % lumpy),15.59,%,C,recipe-weighted
+Feed,Ore blend MgO (%) (80 % pellets / 20 % lumpy),9.794,%,C,recipe-weighted
+Feed,Ore blend SiO2 (%) (80 % pellets / 20 % lumpy),7.42,%,C,recipe-weighted
+Feed,Ore blend CaO (%) (80 % pellets / 20 % lumpy),0.754,%,C,recipe-weighted
+Feed,Pellet Cr/Fe calculated vs reported 1.40,1.3999,-,C,consistency check
+Feed,Ore blend Cr/Fe,1.4119,-,C,
+Alloy,Alloy Cr / Fe / Si / C,50.42 / 35.99 / 3.64 / 6.71,%,M/WB,mean of 5
+Alloy,Alloy Cr/Fe,1.4009,-,C,
+Alloy,Tap temperature / liquidus / superheat,1732.2 / 1549.95 / 182.25,°C,M/WB,
+Slag,Basicity (CaO+MgO)/SiO2 calculated vs reported 0.95,0.9464,-,C,consistency check
+Slag,MgO/Al2O3,0.6027,-,C,
+Slag,Cr2O3 in slag (measured; replaces supplied 15 %),9.54,%,M/WB,
+Slag,Liquidus Levin / FactSage; in-furnace temperature,1755.12 / 1756.66 / 1800.05,°C,M/WB,model estimates
+Recovery,Workbook recovery 78 % -> ore required,2.3895,t/t,C,
+Recovery,Workbook recovery 78 % -> implied slag (all loss to slag),2.1787,t/t,C,workbook 'about 2.2'
+Recovery,Al2O3 tracer: ore required,2.1287,t/t,C,"ore-only tracer, no dust loss"
+Recovery,Al2O3 tracer: slag mass,1.0978,t/t,C,
+Recovery,Al2O3 tracer: Cr recovery to alloy,87.5565,%,C,"upper bound (ignores dust, ash/flux oxides)"
+Recovery,MgO tracer: ore required,2.1416,t/t,C,"ore-only tracer, no dust loss"
+Recovery,MgO tracer: slag mass,1.1512,t/t,C,
+Recovery,MgO tracer: Cr recovery to alloy,87.0298,%,C,"upper bound (ignores dust, ash/flux oxides)"
+Screening,R/X at PF 0.93 (existing),2.5302,-,C,
+Screening,R/X at PF 0.95 (supervisor upper limit),3.0424,-,C,
+Screening,R/X increase needed 0.93 -> 0.95,20.2447,%,C,electrode geometry / short network
+Screening,LF needed for 60 MW mean at PF 0.93,0.9926,-,C,
+Screening,LF needed for 60 MW mean at PF 0.95,0.9717,-,C,
+Screening,SEC needed for 450 t/d at 60 MW mean,3.2,MWh/t,C,
+Screening,Power needed for 450 t/d at 3.5 MWh/t,65.625,MW,C,> 60.45 MW on-load max
+Screening,"Max mean power at PF 0.95, LF 0.95",58.6625,MW,C,
+Screening,PF x LF needed for 60 MW mean on 65 MVA,0.9231,-,C,

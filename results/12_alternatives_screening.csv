@@ -1,0 +1,8 @@
+Code,Alternative,Mean_power_MW,SEC_MWh_t,Production_t_d,Change_pct,Meets_450,Note
+E0,"Existing operation (PF 0.93, LF 0.95)",57.43,3.5,393.8,0.0,no,baseline
+E1,"Raise PF to 0.95 (R/X +20 %), LF 0.95",58.66,3.5,402.3,2.2,no,electrode geometry and/or short-network reactance
+E2,E1 + load factor to 0.972 → 60 MW mean,60.0,3.5,411.4,4.5,no,fewer power interruptions
+P1,"Hot-charged pellets ~500 °C (A-24), power unchanged",57.43,3.15,437.5,11.1,no,-70 kWh/t per 100 °C (R-04)
+P2,Pre-reduced hot pellets 40–50 % metallised,57.43,2.41,571.9,45.2,yes,workbook target SEC 2.41
+C1,E2 + P1 (60 MW and hot charging),60.0,3.15,457.1,16.1,yes,electrical uprate + preheat
+C2,E2 + P2 (60 MW and pre-reduction),60.0,2.41,597.5,51.7,yes,upper bound; other bottlenecks will limit

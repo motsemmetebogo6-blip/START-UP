@@ -4,6 +4,10 @@ BEngTech Metallurgical Engineering design assignment, working repository.
 
 | Path | Content | Status |
 |---|---|---|
+| `data/Ferrochrome_Data_Workbook.xlsx` | **Supervisor-confirmed plant data – governs over all earlier values** | Primary data |
+| `docs/07_Data_Update_Notice.md` | One-page notice: what the workbook changes for each member | Issued |
+| `report/Ch04_Design_Basis.md`, `Ch07_...`, `Ch12_...` | Tebogo's report chapters 4, 7, 12 (drafts, Word in `word/`) | Draft Rev A |
+| `calcs/03_existing_condition_workbook.py` | Reads the workbook → `results/07_existing_condition.csv`, `results/12_alternatives_*` | Verified |
 | `docs/00_SAF_Uprating_Design_Framework.md` | **Controlling document**: governing question, WP1–WP10, gates G0–G6, team allocation, interfaces, acceptance criteria, equipment classification, Power BI architecture | Rev 0 – for team approval (G0) |
 | `docs/06_Work_Allocation.md`, `docs/06a_Work_Allocation_One_Page.md` | **Who does what** (Rev 6; no separate compiler, Tebogo assembles); one-page summary + detailed task cards | Rev 6 – proposed, for Tebogo to confirm |
 | `docs/05_Literature_and_Evidence_Map.md` | Every source: link, what we took, where used, who checks it; gaps; download checklist | Rev 0 – issued |

@@ -1,18 +1,18 @@
 ID,Assumption,Value,Unit,Justification,Reference,Confidence,Owner_WP,Status,Rev
-A-01,Product is HC FeCr / charge chrome from South African chromite,"Cr 50-55, C 6-8, Si 2-6 (typical)",mass %,Typical SA closed-furnace product,R-10 (TBF),M,WP7,Adopted (default Q4),D
+A-01,Product is HC FeCr / charge chrome from South African chromite,"Cr 50-55, C 6-8, Si 2-6 (typical)",mass %,Typical SA closed-furnace product,R-10 (TBF),M,WP7,"Superseded by workbook: measured alloy Cr 50.42, Si 3.64, C 6.71 %",E
 A-02,Electrodes are Söderberg (self-baking),-,-,Standard for large SA closed FeCr furnaces,R-06,H,WP4,Adopted (default Q4),D
 A-03,65 MVA is total installed rating,-,-,Confirmed by Project Leader,S-07,-,-,Closed (now S-07),B
-A-04,Specific electrical energy with pelletised/preheated feed,3.0-3.5,MWh/t,Outotec route 3-3.5 MWh/t; min 3.31 MWh/t at 6% SiO2; -70 kWh/t per +100 C preheat,"R-04, R-05, R-07",M,WP7,Adopted; verify by energy balance,D
-A-05,Baseline furnace power factor,0.80-0.85,-,0.85 typical for average-sized FeCr furnace; larger run lower,"R-02, R-14",M,WP3,Superseded by A-14 calc (0.846),D
+A-04,Specific electrical energy with pelletised/preheated feed,3.0-3.5,MWh/t,Outotec route 3-3.5 MWh/t; min 3.31 MWh/t at 6% SiO2; -70 kWh/t per +100 C preheat,"R-04, R-05, R-07",M,WP7,Superseded by workbook: SEC 3.5 MWh/t confirmed by supervisor (cold sintered pellets),E
+A-05,Baseline furnace power factor,0.80-0.85,-,0.85 typical for average-sized FeCr furnace; larger run lower,"R-02, R-14",M,WP3,Superseded by workbook: PF 0.93 accepted by supervisor (<=0.95 acceptable),E
 A-06,Secondary-circuit electrical efficiency,0.94-0.98,-,Engineering judgement; no reference yet,TBF,L,WP3,Open - research,D
 A-07,Electrode current-density criterion,J(60 MW) <= J(baseline) = 6.38,A/cm2,Published FeCr furnace at 5.83 A/cm2 exceeds patent guideline 4.5-5 A/cm2,"R-08, R-13",M,WP4,Revised (docs/02),D
 A-08,Westly C3 same for 55 and 60 MW cases,I = C3 P^(2/3),-,Classical similarity; disputed,"R-01, R-03",L-M,WP3,Cross-check only,D
-A-09,Furnace utilisation,0.90-0.95,-,Engineering judgement,TBF,L,WP7,Open,D
+A-09,Furnace utilisation,0.90-0.95,-,Engineering judgement,TBF,L,WP7,Superseded by workbook: load factor 0.95 (back-solved),E
 A-10,PCD/D ratio,2.5-3.0 (expected),-,Not yet referenced,TBF,L,WP4,Open - research,D
 A-11,55/60 MW = active power into the furnace (secondary side),-,-,Brief does not define; conservative choice,S-10,M,WP3,Adopted,D
 A-12,"Feed, reductant, slag and product unchanged between scenarios",-,-,Isolates the scale-up effect,-,H,All,Adopted,D
 A-13,Shell and hearth re-used,-,-,Confirmed by Project Leader,S-08,-,-,Closed (now S-08),B
-A-14,Existing 55 MW furnace already runs at full 65 MVA,PF = 0.846,-,Consistent with brief and typical FeCr PF; alternative gives same 60 MW constraint,R-02,M,WP1/WP3,Adopted,D
+A-14,Existing 55 MW furnace already runs at full 65 MVA,PF = 0.846,-,Consistent with brief and typical FeCr PF; alternative gives same 60 MW constraint,R-02,M,WP1/WP3,Superseded by workbook: PF 0.93 at 65 MVA; mean power 57.43 MW,E
 A-15,Grid frequency,50,Hz,South African grid,-,H,WP3,Adopted,D
 A-16,Baseline electrode diameter,1.55,m,Same as 63 MVA SA FeCr analogues and 48 MW model furnace,"R-11, R-13",M,WP1/WP4,Adopted (RFS),D
 A-17,Achievable total reactance reduction,20 (about 29 in short network),%,70% of SAF reactance in the short network; feasibility to be shown,R-14,L,WP3,Provisional,D
@@ -22,3 +22,5 @@ A-20,Hearth/PCD ratio,2.60,-,Mid-point of 2.55 and 2.67 from two published FeCr 
 A-21,HV supply voltage,132 (88 sensitivity),kV,Typical SA furnace supply levels; no data,-,L,WP3,Adopted (RFS draft),A
 A-22,Auxiliary plant design margin over 55 MW duty,10,%,Engineering judgement; no data. Critical - decides auxiliaries class,-,L,WP5/WP7,Critical - team review at G1,A
 A-23,Existing transformer secondary tap range,260-340,V,Engineering judgement around 312 V; no data. Critical - decides transformer class,-,L,WP3,Critical - team review at G1,A
+A-24,Hot-charging temperature for preheat alternative (P1),~500,degC,Screening value only; with R-04 (-70 kWh/t per 100 C) gives SEC 3.15,R-04,L,WP3/WP7 (Ch. 12),Open - to confirm with Ngesi (Ch. 9),E
+A-25,Meaning of brief 55 MW vs workbook 57.43 MW mean,Option A: 55 MW = bath power (eta_el 0.958); Option B: nominal label,-,Workbook mean power 57.43 MW reproduces actual production; brief says approx. 55 MW,Workbook,M,PL (Ch. 4),Open - confirm with supervisor,E
