@@ -343,7 +343,7 @@ def black_arial_styles(doc):
               '<w:b/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/>')
     set_style("FigureCaption", '<w:keepLines/><w:spacing w:before="80" w:after="240" w:line="240" w:lineRule="auto"/><w:jc w:val="center"/>',
               '<w:b/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/>')
-    set_style("Reference", '<w:spacing w:after="120" w:line="360" w:lineRule="auto"/><w:ind w:left="567" w:hanging="567"/>')
+    set_style("Reference", '<w:spacing w:after="120" w:line="360" w:lineRule="auto"/><w:ind w:left="567" w:hanging="567"/><w:jc w:val="both"/>')
     set_style("TableNote", '<w:spacing w:before="60" w:after="200" w:line="240" w:lineRule="auto"/>',
               '<w:sz w:val="18"/><w:szCs w:val="18"/>')
     set_style("Compact", '<w:spacing w:before="0" w:after="60" w:line="360" w:lineRule="auto"/>')
@@ -368,6 +368,9 @@ def black_arial_styles(doc):
               '<w:next w:val="Normal"/><w:uiPriority w:val="99"/><w:unhideWhenUsed/><w:pPr><w:tabs>'
               '<w:tab w:val="right" w:leader="dot" w:pos="9016"/></w:tabs><w:spacing w:before="0" w:after="60" w:line="240" w:lineRule="auto"/>'
               '<w:ind w:left="1134" w:hanging="1134"/></w:pPr><w:rPr><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:style>')
+    add_style(f'<w:style {nsdecls("w")} w:type="paragraph" w:styleId="AppendixHeading"><w:name w:val="Appendix Heading"/><w:basedOn w:val="Normal"/>'
+              '<w:next w:val="Normal"/><w:qFormat/><w:pPr><w:keepNext/><w:keepLines/><w:spacing w:before="240" w:after="120" w:line="360" w:lineRule="auto"/></w:pPr>'
+              '<w:rPr><w:b/><w:bCs/></w:rPr></w:style>')
     add_style(f'<w:style {nsdecls("w")} w:type="paragraph" w:styleId="TOCHeading"><w:name w:val="TOC Heading"/><w:basedOn w:val="Normal"/>'
               '<w:next w:val="Normal"/><w:uiPriority w:val="39"/><w:qFormat/><w:pPr><w:keepNext/><w:spacing w:before="0" w:after="240" '
               'w:line="360" w:lineRule="auto"/></w:pPr><w:rPr><w:b/><w:bCs/><w:caps/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:style>')
@@ -500,7 +503,7 @@ def current_jc(p):
     return j.get(q("w:val")) if j is not None else None
 
 
-CAP_RE = re.compile(r"^\s*(Table|Figure)\s+(\d+\.\d+)\s*(:|\.)?\s*([A-Z(À-ſ].*)$", re.S)
+CAP_RE = re.compile(r"^\s*(Table|Figure)\s+((?:\d+|[A-D])\.\d+)\s*(:|\.)?\s*([A-Z(À-ſ].*)$", re.S)
 
 
 def caption_kind(p):
@@ -569,6 +572,13 @@ def normalise_body(doc, cover_end_el):
         if sid in ("Heading1", "Heading2", "Heading3"):
             normalise_runs(p)
             # direct spacing/justification off so the style governs
+            ppr = p.find(q("w:pPr"))
+            for e in list(ppr):
+                if e.tag in (q("w:spacing"), q("w:jc"), q("w:ind"), q("w:tabs")):
+                    ppr.remove(e)
+            continue
+        if sid == "AppendixHeading":
+            normalise_runs(p)
             ppr = p.find(q("w:pPr"))
             for e in list(ppr):
                 if e.tag in (q("w:spacing"), q("w:jc"), q("w:ind"), q("w:tabs")):
@@ -834,7 +844,7 @@ def build_contents(body, pages, anchor):
         h = parse_xml(f'<w:p {nsdecls("w")}><w:pPr><w:pStyle w:val="TOCHeading"/><w:pageBreakBefore/></w:pPr><w:r><w:t>{title}</w:t></w:r></w:p>')
         add(h)
         for i, c in enumerate(caps):
-            m = re.match(r"^((?:Table|Figure)\s+\d+\.\d+)\s*[:.]?\s*(.*)$", c)
+            m = re.match(r"^((?:Table|Figure)\s+(?:\d+|[A-D])\.\d+)\s*[:.]?\s*(.*)$", c)
             label, text = (m.group(1), m.group(2)) if m else ("", c)
             pg = pages.get((kind, i), "")
             add(toc_paragraph("TableofFigures", [("t", f"{label}: {text}" if label else text), ("tab", None), ("t", str(pg))],
@@ -881,7 +891,22 @@ def assemble(src, out, pages=None, tmp=None):
             raise RuntimeError(f"{title} is not empty: {para_text(nxt)[:60]}")
         insert_after(h, fragment_elements(doc, md, src, tmp, orig_nums))
         print("  inserted", title)
-    insert_after(refs, refpar)
+    last = insert_after(refs, refpar)
+    appendices = [("APPENDIX A: CAD MODEL AND THERMAL (COMSOL-TYPE) MODEL OF THE ELECTRODE", "appA_cad_thermal.md"),
+                  ("APPENDIX B: POWER BI DASHBOARD", "appB_powerbi.md"),
+                  ("APPENDIX C: MATLAB SCRIPTS, CROSS-VALIDATION AND DASHBOARD", "appC_matlab.md"),
+                  ("APPENDIX D: EXCEL WORKBOOK AND REGISTER OF DIGITAL FILES", "appD_excel_files.md")]
+    for title, md in appendices:
+        h = copy.deepcopy(refs)
+        for t_ in list(h.iter(q("w:t")))[1:]:
+            t_.text = ""
+        list(h.iter(q("w:t")))[0].text = title
+        hp = h.find(q("w:pPr"))
+        for e in hp.findall(q("w:numPr")):
+            hp.remove(e)
+        hp.find(q("w:pStyle")).addnext(parse_xml(f'<w:numPr {nsdecls("w")}><w:ilvl w:val="0"/><w:numId w:val="0"/></w:numPr>'))
+        last.addnext(h)
+        last = insert_after(h, fragment_elements(doc, md, src, tmp, orig_nums))
     # unnumbered references heading
     ppr = refs.find(q("w:pPr"))
     npr = parse_xml(f'<w:numPr {nsdecls("w")}><w:ilvl w:val="0"/><w:numId w:val="0"/></w:numPr>')

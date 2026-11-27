@@ -1,0 +1,11 @@
+Alloy price
+Hot-charge saving
+Exchange rate
+Discount rate
+Load factor achieved
+Power factor achieved
+Capital cost
+Ore price
+Ore rate
+Electricity tariff
+Reductant price

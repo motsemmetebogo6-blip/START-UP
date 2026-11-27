@@ -1,0 +1,11 @@
+Ore
+Reductant
+Moisture
+Quartz
+Limestone
+Alloy
+Slag
+CO
+CO2
+H2O
+Volatiles
