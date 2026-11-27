@@ -1,0 +1,17 @@
+kpi,value,unit,provenance,note
+Cr recovery to alloy (reconciled),86.95,%,CALCULATED,output of balance
+Cr recovery (workbook assumption),78.0,%,ASSUMED,Workbook!Assumptions C19
+Cr in feed,579.9,kg/t,CALCULATED,
+Cr to slag,77.5,kg/t,CALCULATED,
+"Cr unaccounted (dust/fume, measurement error)",-1.9,kg/t,CALCULATED,negative = slight over-closure
+Slag rate,1.188,t/t,CALCULATED,
+Ore rate,2.144,t/t,CALCULATED,team used 2.13 (estimate)
+"Reductant rate, dry",0.433,t/t,CALCULATED,team used 0.433
+Flux rate (quartz + limestone),0.366,t/t,CALCULATED,team used 0.449
+Quartz share of flux (free result),59.7,%,CALCULATED,workbook recipe 55 %
+Oxygen removed by reduction,377.3,kg/t,CALCULATED,
+Off-gas volume (CO+CO2+H2O),597.3,Nm3/t,CALCULATED,VM not included
+"Off-gas, existing",9797.0,Nm3/h,CALCULATED,393.65 t/d
+"Off-gas, C1",11315.0,Nm3/h,CALCULATED,454.6 t/d
+Mass closure,-0.407,%,CALCULATED,
+Max |relative residual| of the 7 balances,2.913,%,CALCULATED,data consistency

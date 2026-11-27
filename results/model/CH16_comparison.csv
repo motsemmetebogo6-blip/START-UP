@@ -1,0 +1,8 @@
+case,P_mean_MW,SEC_MWh_t,production_tpd,meets_450,aux_util_pct_(10%_margin),NPV_RM,IRR_pct,payback_y
+Base case C1,60.02,3.167,454.8,YES,105.0,1479.0,68.7,1.46
+Hot-charge saving halved,60.02,3.334,432.1,no,99.8,718.0,40.7,2.44
+Load factor stays 0.95,58.66,3.167,444.5,no,102.6,1231.0,59.6,1.68
+Power factor stays 0.93,58.76,3.167,445.2,no,102.8,1249.0,60.2,1.66
+Alloy price US$1 200/t,60.02,3.167,454.8,YES,105.0,900.0,47.4,2.1
+Capital cost +40 %,60.02,3.167,454.8,YES,105.0,1339.0,50.3,1.98
+Ore rate 2.39 t/t (78 % recovery),60.02,3.167,454.8,YES,105.0,1403.0,65.9,1.52

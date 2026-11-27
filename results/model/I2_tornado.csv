@@ -1,0 +1,7 @@
+input,key,low,high,production_at_low,production_at_high
+Hot-charge SEC saving (0.035–0.070 MWh/t per 100 °C),s,0.035,0.07,432.1,454.8
+Cold-charge SEC (±2 %),SEC0,3.43,3.57,465.1,444.9
+Load factor (0.95–0.98),LF,0.95,0.98,444.5,458.5
+Preheat temperature (450–550 °C),T,450.0,550.0,449.8,459.9
+Power factor (0.93–0.95),PF,0.93,0.95,445.2,454.8
+Preheat reference temperature (0 / 25 °C),T_ref,0.0,25.0,457.3,454.8

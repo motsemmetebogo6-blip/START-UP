@@ -1,0 +1,7 @@
+metric,value
+samples,100000
+P(production >= 450 t/d),0.0985
+P5 t/d,423.8
+P50 t/d,438.0
+P95 t/d,452.9
+mean t/d,438.1

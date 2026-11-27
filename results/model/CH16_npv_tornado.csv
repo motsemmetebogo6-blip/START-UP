@@ -1,0 +1,12 @@
+input,key,low,high,NPV_at_low_RM,NPV_at_high_RM,swing_RM,production_at_low_tpd,production_at_high_tpd
+Alloy price (US$1 200–1 800/t),price_usd,1200,1800,899.5,2059.0,1159.4,454.8,454.8
+Hot-charge saving (0.035–0.070 MWh/t per 100 °C),save,0.035,0.07,718.1,1479.2,761.1,432.1,454.8
+Exchange rate (R16.00–18.50/US$),fx,16.0,18.5,1243.0,1659.0,416.0,454.8,454.8
+Discount rate (10–14 %),disc,0.1,0.14,1698.9,1294.5,404.4,454.8,454.8
+Load factor achieved (0.95–0.98),LF,0.95,0.98,1231.4,1569.4,337.9,444.5,458.5
+Power factor achieved (0.93–0.95),PF,0.93,0.95,1248.7,1479.2,230.5,445.2,454.8
+Capital cost (−20 % / +40 %),capex_core,248.0,434.0,1549.1,1339.4,209.7,454.8,454.8
+Ore price (R2 400–3 200/t),ore_price,2400,3200,1574.4,1384.1,190.2,454.8,454.8
+Ore rate (2.14 reconciled – 2.39 if 78 % recovery),ore_rate,2.143601743917516,2.39,1479.2,1402.7,76.5,454.8,454.8
+Electricity tariff (R1.45–1.85/kWh),elec,1.45,1.85,1501.8,1456.7,45.2,454.8,454.8
+Reductant price (R2 400–3 200/t),red_price,2400,3200,1498.5,1460.0,38.5,454.8,454.8

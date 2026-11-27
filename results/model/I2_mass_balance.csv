@@ -1,0 +1,15 @@
+direction,stream,kg_per_t_alloy,t_per_day_existing_393.65,t_per_day_C1_454.6
+IN,Ore blend (80 % pellets / 20 % lumpy),2143.6,843.83,974.52
+IN,"Reductant, dry (10 % coke / 90 % anthracite)",433.43,170.62,197.04
+IN,Reductant moisture,28.24,11.12,12.84
+IN,Quartz,218.57,86.04,99.36
+IN,Limestone,147.72,58.15,67.16
+OUT,Alloy (HC FeCr),1000.0,393.65,454.62
+OUT,Slag,1187.98,467.65,540.08
+OUT,CO (reduction gas),660.53,260.02,300.29
+OUT,CO2 (limestone calcination),66.02,25.99,30.02
+OUT,H2O (reductant moisture),28.24,11.12,12.84
+OUT,Volatile matter,16.67,6.56,7.58
+CHECK,Mass in,2971.55,,
+CHECK,Mass out,2959.44,,
+CHECK,"Closure (out-in)/in, %",-0.407,,

@@ -1,0 +1,29 @@
+{
+  "name": "SAF Engineering",
+  "dataColors": [
+    "#3B6E8F",
+    "#7A1F1F",
+    "#C9A227",
+    "#B9B9B9",
+    "#2E7D32",
+    "#D9822B",
+    "#5B9BD5",
+    "#404040"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#222222",
+  "tableAccent": "#3B6E8F",
+  "good": "#2E7D32",
+  "neutral": "#C9A227",
+  "bad": "#C62828",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 13
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10
+    }
+  }
+}

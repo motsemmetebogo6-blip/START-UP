@@ -1,0 +1,19 @@
+block,item,python,octave,rel_diff,status
+mass balance,m_ore,2143.6017439175157,2143.60174391752,1.909275437749253e-15,PASS
+mass balance,m_red,433.4287171350343,433.428717135034,6.557412627910682e-16,PASS
+mass balance,m_quartz,218.5651933108074,218.565193310808,2.860828835539799e-15,PASS
+mass balance,m_lime,147.71880142303021,147.71880142303,1.539233146037314e-15,PASS
+mass balance,m_slag,1187.9796935502152,1187.97969355022,4.019300338407715e-15,PASS
+mass balance,Cr_recovery,0.869473338660929,0.869473338660929,0.0,PASS
+optimum T (SLSQP vs closed form),LF_max 0.95 project rule (0 C ref),530.5,530.476190476191,4.488330341004925e-05,PASS
+optimum T (SLSQP vs closed form),LF_max 0.95 ambient ref (AF-14),555.5,555.476190476191,4.286326617984986e-05,PASS
+optimum T (SLSQP vs closed form),LF_max 0.96 project rule (0 C ref),483.4,483.428571428571,5.9101654845475705e-05,PASS
+optimum T (SLSQP vs closed form),LF_max 0.96 ambient ref (AF-14),508.4,508.428571428571,5.619556054989879e-05,PASS
+optimum T (SLSQP vs closed form),LF_max 0.965 project rule (0 C ref),459.9,459.904761904762,1.0354110582121135e-05,PASS
+optimum T (SLSQP vs closed form),LF_max 0.965 ambient ref (AF-14),484.9,484.904761904762,9.820288716697037e-06,PASS
+optimum T (SLSQP vs closed form),LF_max 0.972 project rule (0 C ref),427.0,426.971428571429,6.691648822172425e-05,PASS
+optimum T (SLSQP vs closed form),LF_max 0.972 ambient ref (AF-14),452.0,451.971428571429,6.321512105603687e-05,PASS
+optimum T (SLSQP vs closed form),LF_max 0.975 project rule (0 C ref),412.9,412.857142857142,0.00010380622837577183,PASS
+optimum T (SLSQP vs closed form),LF_max 0.975 ambient ref (AF-14),437.9,437.857142857142,9.78792822205483e-05,PASS
+optimum T (SLSQP vs closed form),LF_max 0.98 project rule (0 C ref),389.3,389.333333333334,8.561643835783839e-05,PASS
+optimum T (SLSQP vs closed form),LF_max 0.98 ambient ref (AF-14),414.3,414.333333333334,8.045052292997205e-05,PASS

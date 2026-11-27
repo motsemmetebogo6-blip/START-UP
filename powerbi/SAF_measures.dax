@@ -1,0 +1,40 @@
+// ===== SAF engineering dashboard – DAX measures (create in a 'Measures' table) =====
+// Relationships: dim_scenario[ScenarioID] 1–* fact_scenario_metrics[ScenarioID]
+//                dim_scenario[ScenarioID] 1–* fact_constraints[ScenarioID]
+//                dim_metric[Metric]       1–* fact_scenario_metrics[Metric]
+
+Metric Value = SUM ( fact_scenario_metrics[Value] )
+Production t/d = CALCULATE ( [Metric Value], fact_scenario_metrics[Metric] = "production_tpd" )
+Mean Power MW = CALCULATE ( [Metric Value], fact_scenario_metrics[Metric] = "P_mean_MW" )
+On-load Power MW = CALCULATE ( [Metric Value], fact_scenario_metrics[Metric] = "P_on_MW" )
+On-load MVA = CALCULATE ( [Metric Value], fact_scenario_metrics[Metric] = "S_on_MVA" )
+On-load Loading % = DIVIDE ( [On-load MVA], 65 )
+Transformer Headroom MVA = 65 - [On-load MVA]
+Electrode Current kA (est.) = CALCULATE ( [Metric Value], fact_scenario_metrics[Metric] = "I_electrode_kA_est" )
+Current Density A/cm2 (est.) = CALCULATE ( [Metric Value], fact_scenario_metrics[Metric] = "J_A_cm2_est" )
+SEC MWh/t = CALCULATE ( [Metric Value], fact_scenario_metrics[Metric] = "SEC_MWh_t" )
+Baseline Production t/d = CALCULATE ( [Production t/d], dim_scenario[ScenarioID] = "A" )
+Production Gain t/d = [Production t/d] - [Baseline Production t/d]
+Production Gain % = DIVIDE ( [Production Gain t/d], [Baseline Production t/d] )
+Gap to 450 t/d = [Production t/d] - 450
+Meets 450 = IF ( [Production t/d] >= 450, "Meets 450 t/d", "Below target" )
+
+Criteria Failed = CALCULATE ( COUNTROWS ( fact_constraints ), fact_constraints[Status] = "FAIL" )
+Criteria Passed = CALCULATE ( COUNTROWS ( fact_constraints ), fact_constraints[Status] = "PASS" )
+Max Utilisation = MAX ( fact_constraints[Utilisation] )
+Binding Criterion =
+    VAR m = [Max Utilisation]
+    RETURN CALCULATE ( FIRSTNONBLANK ( fact_constraints[Criterion], 1 ), fact_constraints[Utilisation] = m )
+
+Cr Recovery % = CALCULATE ( SUM ( fact_mb_kpi[Value] ), fact_mb_kpi[KPI] = "Cr recovery to alloy (reconciled)" ) / 100
+Mass Closure % = CALCULATE ( SUM ( fact_mb_kpi[Value] ), fact_mb_kpi[KPI] = "Mass closure" ) / 100
+Max Balance Residual % = MAXX ( fact_balance_residuals, ABS ( fact_balance_residuals[Residual_pct_of_feed] ) )
+
+P(>=450 t/d) = DIVIDE ( CALCULATE ( SUM ( fact_montecarlo_hist[Count] ), fact_montecarlo_hist[MeetsTarget] = "Yes" ),
+                        SUM ( fact_montecarlo_hist[Count] ) )
+Tornado Swing t/d = SUMX ( fact_tornado, ABS ( fact_tornado[Production_high] - fact_tornado[Production_low] ) )
+
+Checks Reproduced % = DIVIDE ( CALCULATE ( COUNTROWS ( fact_verification ), fact_verification[Status] = "REPRODUCED" ),
+                               COUNTROWS ( fact_verification ) )
+Cross-validation Worst Rel Diff = MAX ( fact_crossval[RelDiff] )
+Inputs by Provenance = COUNTROWS ( dim_input_provenance )

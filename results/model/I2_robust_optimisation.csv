@@ -1,0 +1,4 @@
+case,T_for_P50_C,T_for_P90_C,P_at_500C
+"Saving uncertain: U(0.035, 0.070)",670,925,0.098
+Saving verified ≈ 0.070 by plant trial,520,610,0.387
+Saving verified ≈ 0.0525 (75 % of vendor),670,780,0.026

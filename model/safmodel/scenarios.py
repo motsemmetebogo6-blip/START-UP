@@ -28,7 +28,7 @@ def build_scenarios(inp):
     SEC0 = inp["wb.specific_energy_baseline"].value
     pf1, lf1 = inp["prop.pf_c1"].value, inp["prop.lf_c1"].value
     sec_hot = pr.hot_charge_sec(SEC0, inp["asm.hot_charge_sec_saving_per_100C"].value,
-                                inp["asm.hot_charge_temperature_C"].value)
+                                inp["asm.hot_charge_temperature_C"].value, 25.0)   # ambient reference (AF-14, conservative)
     return [
         Scenario("A", "Existing operation (workbook)", PF0, LF0, SEC0, None,
                  "full rating on load; mean = 65 x 0.93 x 0.95", "Ch. 4, 7; Jeff Ch. 2"),
