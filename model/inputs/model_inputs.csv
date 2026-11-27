@@ -1,0 +1,158 @@
+name,value,unit,provenance,source,note
+asm.hot_charge_sec_saving_per_100C,0.07,MWh/t per 100 C,LITERATURE,Metso (n.d.) R-04,vendor rule of thumb
+asm.hot_charge_temperature_C,500.0,C,ASSUMED,A-24,screening value
+asm.hv_supply_kV,132.0,kV,ASSUMED,A-21,sensitivity 88 kV
+asm.hv_supply_kV_alt,88.0,kV,ASSUMED,A-21,
+asm.pf_upper_limit,0.95,-,SUPPLIED,Workbook!Assumptions F6 (supervisor: <=0.95 acceptable),
+brief.P_existing_MW,55.0,MW,SUPPLIED,Project brief,'approximately 55 MW' – see A-25
+brief.P_proposed_MW,60.0,MW,SUPPLIED,Project brief,meaning defined per scenario
+fluxes.limestone.Al2O3 (%),0.5153,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.limestone.CaO (%),46.5903,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.limestone.Fe2O3 (%),0.618,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.limestone.K2O (%),0.0357,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.limestone.MgO (%),5.8883,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.limestone.MnO (%),0.1377,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.limestone.SiO2 (%),1.5193,,MEASURED,Workbook!Fluxes (mean reported),
+"fluxes.limestone.Total carbonates, calc (%)",98.2977,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.limestone.Total oxide (%),55.3047,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.quartz.Al2O3 (%),1.0,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.quartz.CaO (%),0.03,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.quartz.Fe2O3 (%),0.17,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.quartz.MgO (%),0.07,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.quartz.MnO (%),0.0,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.quartz.SiO2 (%),96.88,,MEASURED,Workbook!Fluxes (mean reported),
+fluxes.quartz.TiO2 (%),0.01,,MEASURED,Workbook!Fluxes (mean reported),
+lit.electrode_diameter_m,1.55,m,LITERATURE,"R-11, R-13; A-16","Söderberg, 63 MVA SA FeCr analogues"
+lit.hearth_diameter_m,10.881,m,LITERATURE,"A-20 (hearth/PCD 2.60 from R-16, R-17)",
+lit.pcd_m,4.185,m,LITERATURE,"A-19 (PCD/D 2.70 from R-16, R-17)",
+lit.shell_inner_diameter_m,13.7,m,LITERATURE,R-11,
+lit.westly_C3,8.33,kA/MW^(2/3),LITERATURE,"Westly (1974) calibrated on R-13 (48 MW, 110 kA); A-18",single-analogue calibration – estimate only
+lit.westly_C3_high,11.0,kA/MW^(2/3),LITERATURE,R-12 reported FeCr range,
+lit.westly_C3_low,6.0,kA/MW^(2/3),LITERATURE,R-12 reported FeCr range,
+metal.metal.C (%),6.71,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.Co (%),0.06,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.Cr (%),50.42,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.Fe (%),35.99,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.Liquidus (°C),1549.95,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.Mn (%),0.24,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.Ni (%),0.17,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.P (%),0.0167,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.S (%),0.02,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.Si (%),3.64,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.Slag in metal (%),0.01,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.Superheat (°C),182.25,,MEASURED,Workbook!Metal (mean reported),
+"metal.metal.Tap temp, derived (°C)",1732.2,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.Ti (%),0.64,,MEASURED,Workbook!Metal (mean reported),
+metal.metal.V (%),0.39,,MEASURED,Workbook!Metal (mean reported),
+ore.pellets.Al2O3 (%),15.61,,MEASURED,Workbook!Ore (mean reported),
+ore.pellets.CaO (%),0.65,,MEASURED,Workbook!Ore (mean reported),
+ore.pellets.Cr/Fe ratio,1.4,,MEASURED,Workbook!Ore (mean reported),
+ore.pellets.Cr2O3 (%),39.76,,MEASURED,Workbook!Ore (mean reported),
+ore.pellets.FeO (%),25.0,,MEASURED,Workbook!Ore (mean reported),
+ore.pellets.MgO (%),9.48,,MEASURED,Workbook!Ore (mean reported),
+ore.pellets.MnO (%),0.21,,MEASURED,Workbook!Ore (mean reported),
+ore.pellets.P (%),0.009,,MEASURED,Workbook!Ore (mean reported),
+ore.pellets.SiO2 (%),7.02,,MEASURED,Workbook!Ore (mean reported),
+ore.pellets.TiO2 (%),0.81,,MEASURED,Workbook!Ore (mean reported),
+ore.pellets.Total (%),99.0,,MEASURED,Workbook!Ore (mean reported),
+ore.small_lumpy_ore.Al2O3 (%),15.51,,MEASURED,Workbook!Ore (mean reported),
+ore.small_lumpy_ore.CaO (%),1.17,,MEASURED,Workbook!Ore (mean reported),
+ore.small_lumpy_ore.Cr/Fe ratio,1.47,,MEASURED,Workbook!Ore (mean reported),
+ore.small_lumpy_ore.Cr2O3 (%),38.65,,MEASURED,Workbook!Ore (mean reported),
+ore.small_lumpy_ore.FeO (%),23.25,,MEASURED,Workbook!Ore (mean reported),
+ore.small_lumpy_ore.MgO (%),11.05,,MEASURED,Workbook!Ore (mean reported),
+ore.small_lumpy_ore.MnO (%),0.19,,MEASURED,Workbook!Ore (mean reported),
+ore.small_lumpy_ore.P (%),0.0045,,MEASURED,Workbook!Ore (mean reported),
+ore.small_lumpy_ore.SiO2 (%),9.02,,MEASURED,Workbook!Ore (mean reported),
+ore.small_lumpy_ore.TiO2 (%),0.74,,MEASURED,Workbook!Ore (mean reported),
+prop.lf_c1,0.972,-,PROPOSED,Ch. 12 alternative E2/C1,60 MW mean at PF 0.95
+prop.pf_c1,0.95,-,PROPOSED,Ch. 12 alternative E1/C1,supervisor limit
+recipe.flux.limestone,0.45,fraction,SUPPLIED,Workbook!Recipe,split within flux group
+recipe.flux.quartz,0.55,fraction,SUPPLIED,Workbook!Recipe,split within flux group
+recipe.ore.pellets,0.8,fraction,SUPPLIED,Workbook!Recipe,split within ore group; basis (as-received vs dry) unconfirmed
+recipe.ore.small_lumpy_ore,0.2,fraction,SUPPLIED,Workbook!Recipe,split within ore group
+recipe.reductant.anthracite_1,0.54,fraction,SUPPLIED,Workbook!Recipe,split within reductant group
+recipe.reductant.anthracite_2,0.36,fraction,SUPPLIED,Workbook!Recipe,split within reductant group
+recipe.reductant.coke,0.1,fraction,SUPPLIED,Workbook!Recipe,split within reductant group
+reductants.anthracite_1.Al2O3 (%),4.26,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.Ash (%),14.06,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.CaO (%),0.4,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.Fe2O3 (%),0.63,,MEASURED,Workbook!Reductants (mean reported),
+"reductants.anthracite_1.Fixed carbon, DFC (%)",82.02,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.Inherent moisture (%),2.24,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.LOI (%),85.94,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.MgO (%),0.22,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.P (%),0.008,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.S XRF (%),0.244,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.S combustion (%),0.308,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.SiO2 (%),6.84,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.TiO2 (%),0.19,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.Total moisture (%),6.45,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_1.Volatile matter (%),3.52,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.Al2O3 (%),3.66,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.Ash (%),13.27,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.CaO (%),0.67,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.Fe2O3 (%),0.92,,MEASURED,Workbook!Reductants (mean reported),
+"reductants.anthracite_2.Fixed carbon, DFC (%)",81.49,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.Inherent moisture (%),1.2,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.LOI (%),86.73,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.MgO (%),0.19,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.P (%),0.0048,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.S XRF (%),0.6565,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.S combustion (%),0.669,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.SiO2 (%),6.03,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.TiO2 (%),0.17,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.Total moisture (%),2.96,,MEASURED,Workbook!Reductants (mean reported),
+reductants.anthracite_2.Volatile matter (%),5.01,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.Al2O3 (%),2.92,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.Ash (%),16.5,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.CaO (%),0.28,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.Fe2O3 (%),1.89,,MEASURED,Workbook!Reductants (mean reported),
+"reductants.coke.Fixed carbon, DFC (%)",81.75,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.Inherent moisture (%),1.8,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.LOI (%),83.5,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.MgO (%),0.13,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.P (%),0.0059,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.S XRF (%),0.713,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.S combustion (%),0.612,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.SiO2 (%),7.75,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.TiO2 (%),0.28,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.Total moisture (%),15.68,,MEASURED,Workbook!Reductants (mean reported),
+reductants.coke.Volatile matter (%),1.42,,MEASURED,Workbook!Reductants (mean reported),
+slag.slag.Al2O3 (%),30.23,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.Basicity (CaO+MgO)/SiO2,0.95,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.Basicity (Japanese),0.85,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.C (%),0.22,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.CaO (%),7.55,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.CaO normalised (%),9.07,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.Conductivity,0.9,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.Cr2O3 (%),9.54,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.FeO (%),5.8,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.Four-component total (%),83.23,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.In-furnace temp (°C),1800.05,,MEASURED,Workbook!Slag (mean reported),
+"slag.slag.Liquidus, FactSage (°C)",1756.66,,MEASURED,Workbook!Slag (mean reported),
+"slag.slag.Liquidus, Levin (°C)",1755.12,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.MgO (%),18.22,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.MgO normalised (%),21.89,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.S (%),0.22,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.SiO2 (%),27.23,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.SiO2 normalised (%),32.72,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.Slag superheat (°C),43.67,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.Spinel at 1750 °C (%),2.25,,MEASURED,Workbook!Slag (mean reported),
+"slag.slag.Tap temp, likely (°C)",1732.2,,MEASURED,Workbook!Slag (mean reported),
+slag.slag.Viscosity,0.78,,MEASURED,Workbook!Slag (mean reported),
+wb.chromium_recovery_baseline,78.0,%,ASSUMED,Workbook!Assumptions,check only: implies about 2.2 t slag per t alloy; recovery should be an OUTPUT of the balance
+wb.chromium_recovery_target,93.0,%,TARGET,Workbook!Assumptions,kept
+wb.energy_per_day,1378.3,MWh/day,DERIVED_WB,Workbook!Assumptions,57.43 MW x 24 h
+wb.ferrochrome_production_baseline,393.65,t/day,SUPPLIED,Workbook!Assumptions,SUPERVISOR: actual plant production 393.5-393.8 t/day (midpoint used); averaging period and source to confirm; matches power-limited estimate 393.8
+wb.ferrochrome_production_target,450.0,t/day,TARGET,Workbook!Assumptions,CONFIRMED by supervisor as NOT currently achieved (bottleneck) - so 450 is a target not a baseline
+wb.load_factor,0.95,fraction,CALIBRATED,Workbook!Assumptions,back-solved from supplied actual production: 0.949-0.950 given PF 0.93 and 3.5 MWh/t (not independently measured)
+wb.mean_active_power,57.43,MW,DERIVED_WB,Workbook!Assumptions,65 x 0.93 x 0.95
+wb.power_factor,0.93,fraction,ASSUMED,Workbook!Assumptions,ACCEPTED by supervisor (values below 0.95 acceptable)
+wb.production_at_target_energy_same_power,571.9,t/day,DERIVED_WB,Workbook!Assumptions,1378.3 MWh/d / 2.41 (if power is held constant)
+wb.slag_Cr2O3_content,9.54,wt%,MEASURED,Workbook!Assumptions,CORRECTION not adjustment: measured mean of 5 slag samples replaces the supplied 15
+wb.specific_energy_baseline,3.5,MWh/t alloy,SUPPLIED,Workbook!Assumptions,CONFIRMED by supervisor: MWh per tonne of alloy; furnace electrical boundary assumed (sintering upstream excluded)
+wb.specific_energy_required_for_450,3.06,MWh/t alloy,DERIVED_WB,Workbook!Assumptions,1378.3 MWh/d / 450 t/d: a 12.5 pct cut from 3.5 is enough to reach 450 t/d on the 65 MVA supply
+wb.specific_energy_target,2.41,MWh/t alloy,TARGET,Workbook!Assumptions,via hot-charged pre-reduced pellets (45-50 pct metallisation - definition unconfirmed)
+wb.target_production_high,480.0,t/day,TARGET,Workbook!Assumptions,from supplied table; needs 70.0 MW at 3.5 MWh/t (infeasible) but 48.2 MW at 2.41
+wb.transformer_capacity,65.0,MVA,ASSUMED,Workbook!Assumptions,kept as fixed physical constraint (anchor of the adjustment)

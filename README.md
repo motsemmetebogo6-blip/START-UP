@@ -4,6 +4,11 @@ BEngTech Metallurgical Engineering design assignment, working repository.
 
 | Path | Content | Status |
 |---|---|---|
+| `docs/08_Audit_and_Modelling_Architecture.md` | Audit of all team chapters (14 findings) and the modelling architecture (Python, MATLAB/Octave, Power BI, ETAP scope, CAD) | Rev A |
+| `docs/09_Increment1_Model_Report.md` | Increment 1: electrical + production model, verification (47/52), Python–Octave cross-validation (104/104) | Rev A |
+| `model/` (`safmodel` package, `run_increment1.py`, tests) | Engineering model, Python | v0.1.0 |
+| `matlab/` | Independent MATLAB/Octave implementation for cross-validation | I1 |
+| `report/figures/` | Publication figures (PNG 300 dpi + SVG) | F1–F3 |
 | `data/Ferrochrome_Data_Workbook.xlsx` | **Supervisor-confirmed plant data – governs over all earlier values** | Primary data |
 | `docs/07_Data_Update_Notice.md` | One-page notice: what the workbook changes for each member | Issued |
 | `report/Ch04_Design_Basis.md`, `Ch07_...`, `Ch12_...` | Tebogo's report chapters 4, 7, 12 (drafts, Word in `word/`) | Draft Rev A |

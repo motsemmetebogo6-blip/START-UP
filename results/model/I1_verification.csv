@@ -1,0 +1,53 @@
+check,document,quantity,team_value,model_value,rel_diff_pct,tolerance_pct,status,basis / audit note
+N-01,Ngesi Ch9,"S at 55 MW, PF 0.93 (MVA)",59.14,59.1398,0.0,0.5,REPRODUCED,AF-02: 55 MW continuous not the workbook baseline
+N-02,Ngesi Ch9,Loading at 55 MW (%),90.98,90.9843,0.005,0.5,REPRODUCED,OK
+N-03,Ngesi Ch9,"S at 60 MW, PF 0.93 (MVA)",64.52,64.5161,0.006,0.5,REPRODUCED,OK
+N-04,Ngesi Ch9,Loading at 60 MW (%),99.26,99.2556,0.004,0.5,REPRODUCED,OK
+N-05,Ngesi Ch9,'95 % loading ceiling' P (MW),57.43,57.4275,0.004,0.5,REPRODUCED,"AF-01: 0.95 is a load (time) factor, not a loading cap"
+N-06,Ngesi Ch9,PF required for 60 MW at '95 % loading',0.972,0.9717,0.035,0.5,REPRODUCED,AF-01: under workbook meaning this is PF needed with LF 0.95
+N-07,Ngesi Ch9,Rating required at PF 0.93 & 95 % (MVA),67.91,67.9117,0.003,0.5,REPRODUCED,AF-01
+N-08,Ngesi Ch9,Daily energy 55 / 60 MW (MWh/d) – 60 MW,1440,1440.0,0.0,0.5,REPRODUCED,OK
+N-09,Ngesi Ch9,"Production at 55 MW, 3.5 (t/d)",377.14,377.1429,0.001,0.5,REPRODUCED,AF-02: actual baseline is 393.65 t/d
+N-10,Ngesi Ch9,"Production at 60 MW, 3.5 (t/d)",411.43,411.4286,0.0,0.5,REPRODUCED,OK
+N-11,Ngesi Ch9,SEC for 450 t/d at 60 MW,3.2,3.2,0.0,0.5,REPRODUCED,OK
+N-12,Ngesi Ch9,SEC for 480 t/d at 60 MW,3.0,3.0,0.0,0.5,REPRODUCED,OK
+N-13,Ngesi Ch9,Production at 57.43 MW and 2.41 (t/d),571.7,571.8921,0.034,0.5,REPRODUCED,OK
+J-01,Jeff Ch2/Ch7,Mean power (MW),57.43,57.4275,0.004,0.5,REPRODUCED,OK
+J-02,Ch7,On-load power (MW),60.45,60.45,0.0,0.5,REPRODUCED,OK
+J-03,Ch7,On-load reactive power (Mvar),23.89,23.8914,0.006,0.5,REPRODUCED,OK
+J-04,Ch7,R/X,2.53,2.5302,0.008,0.5,REPRODUCED,OK
+J-05,Jeff Ch2/Ch7,Power for 450 t/d at 3.5 (MW),65.6,65.625,0.038,0.5,REPRODUCED,OK
+J-06,Ch7,Production from energy (t/d),393.8,393.7886,0.003,0.5,REPRODUCED,OK
+J-07,Ch7,Electrode current est. (kA),128.0,128.3047,0.238,1.0,REPRODUCED,OK
+J-08,Ch7,Secondary voltage est. (V),293,292.4894,0.174,1.0,REPRODUCED,OK
+J-09,Ch7,Current density est. (A/cm2),6.8,6.7997,0.005,1.0,REPRODUCED,OK
+T-01,Ch12,C1 production (t/d) – project rule (ref 0 C),457.1,457.1429,0.009,0.5,REPRODUCED,OK
+T-02,Ch12,C1 production if preheat measured from 25 C (t/d),457.1,454.6172,0.543,0.5,DIFFERS,AF-14: ambient reference lowers C1 to ~454.6 t/d
+T-03,Ch12,R/X increase PF 0.93 -> 0.95 (%),20.2,20.2447,0.221,1.0,REPRODUCED,OK
+T-04,Ch12,LF needed for 60 MW at PF 0.95,0.972,0.9717,0.035,0.5,REPRODUCED,OK
+S-01,Sibandze Ch14,S at 60 MW and PF 0.95 (MVA),63.2,63.1579,0.067,0.5,REPRODUCED,AF-03: uses MEAN power; on-load S under C1 = 64.98 MVA (100 %)
+S-02,Sibandze Ch14,C1 on-load S (MVA) – model,63.2,64.9773,2.812,0.5,DIFFERS,AF-03: model value is the on-load apparent power
+S-03,Sibandze Ch14,S at 60 MW and PF 0.93 (MVA),64.5,64.5161,0.025,0.5,REPRODUCED,OK
+S-04,Sibandze Ch14,Electrode current at 60 MW (kA),128.0,128.3047,0.238,1.0,REPRODUCED,at C1 on-load (61.73 MW) the estimate is 130.1 kA
+S-05,Sibandze Ch14,"Ore duty at 457 t/d (t/d), 2.13 t/t",975,973.623,0.141,1.0,REPRODUCED,"AF-05: 2.13 is an estimate, not measured"
+S-06,Sibandze Ch14,"Reductant duty (t/d), 0.433 t/t",198,197.9243,0.038,1.0,REPRODUCED,0.433 t/t not traceable (mass balance not received)
+S-07,Sibandze Ch14,Slag duty (t/d) vs MgO tracer 1.151 t/t,530,526.1221,0.732,1.0,REPRODUCED,OK
+S-08,Sibandze Ch15,Production gain (t/d),63.3,63.45,0.237,0.5,REPRODUCED,OK
+S-09,Sibandze Ch15,Incremental revenue (R M/yr),604,603.7337,0.044,0.5,REPRODUCED,OK
+S-10,Sibandze Ch15,Electricity cost (R M/yr),37.1,37.1468,0.126,0.5,REPRODUCED,OK
+S-11,Sibandze Ch15,Ore cost (R M/yr),137.8,137.7982,0.001,0.5,REPRODUCED,OK
+S-12,Sibandze Ch15,Total incremental cost (R M/yr),220.7,220.7,0.0,0.5,REPRODUCED,OK
+S-13,Sibandze Ch15,Incremental profit (R M/yr),383,383.0336,0.009,0.5,REPRODUCED,OK
+S-14,Sibandze Ch15,Total investment (R M),402,402.0,0.0,0.5,REPRODUCED,OK
+S-15,Sibandze Ch15,After-tax cash flow (R M/yr) – incl. depreciation shield,286,286.8506,0.297,1.0,REPRODUCED,AF-11: depreciation shield (402/15) not stated in Ch15
+S-16,Sibandze Ch15,NPV 15 y @12 % (R M),1540,1551.7003,0.76,2.0,REPRODUCED,OK
+S-17,Sibandze Ch15,IRR (%),70,71.3337,1.905,3.0,REPRODUCED,OK
+S-18,Sibandze Ch15,Break-even alloy price (US$/t),550,548.3378,0.302,1.0,REPRODUCED,AF-11: operating break-even (excludes capital recovery)
+M-01,Simphiwe Ch16,"S at 60 MW, PF 0.923 (MVA)",65.0,65.0054,0.008,0.5,REPRODUCED,60 MW treated as on-load power (S-O60)
+M-02,Simphiwe Ch16,"S at 60 MW, PF 0.92 (MVA)",65.22,65.2174,0.004,0.5,REPRODUCED,60 MW treated as on-load power (S-O60)
+M-03,Simphiwe Ch16,"S at 60 MW, PF 0.9 (MVA)",66.67,66.6667,0.005,0.5,REPRODUCED,60 MW treated as on-load power (S-O60)
+M-04,Simphiwe Ch16,"S at 60 MW, PF 0.88 (MVA)",68.18,68.1818,0.003,0.5,REPRODUCED,60 MW treated as on-load power (S-O60)
+M-05,Simphiwe Ch16,"S at 60 MW, PF 0.95 (MVA)",63.16,63.1579,0.003,0.5,REPRODUCED,60 MW treated as on-load power (S-O60)
+M-06,Simphiwe Ch3,Secondary voltage (V),312,292.4894,6.253,1.0,DIFFERS,AF-04: 312 V is the pre-workbook (PF 0.846) value
+M-07,Simphiwe Ch3,Electrode current (kA),120.5,128.3047,6.477,1.0,DIFFERS,AF-04
+M-08,Simphiwe Ch3,Current density (A/cm2),6.38,6.7997,6.578,1.0,DIFFERS,AF-04

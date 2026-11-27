@@ -1,0 +1,9 @@
+scenario,name,PF,LF,definition,used_by,P_mean_MW,P_on_MW,S_on_MVA,loading_on_pct,Q_on_Mvar,RX_ratio,I_electrode_kA_est,V_secondary_LL_V_est,J_A_cm2_est,SEC_MWh_t,production_tpd,meets_450_tpd
+A,Existing operation (workbook),0.93,0.95,full rating on load; mean = 65 x 0.93 x 0.95,"Ch. 4, 7; Jeff Ch. 2",57.4275,60.45,65.0,100.0,23.8914,2.5302,128.3047,292.4894,6.7997,3.5,393.7886,0.0
+S-N55,Brief '55 MW' read as continuous power,0.93,1.0,55 MW continuous at PF 0.93,Ngesi Ch. 9 (AF-02),55.0,55.0,59.1398,90.9843,21.7374,2.5302,120.4722,283.4212,6.3846,3.5,377.1429,0.0
+E1,"PF raised to 0.95, LF unchanged",0.95,0.95,full rating; mean = 65 x 0.95 x 0.95,Ch. 12,58.6625,61.75,65.0,100.0,20.2962,3.0424,130.1377,288.3698,6.8968,3.5,402.2571,0.0
+S-B,60 MW MEAN (recommended definition) = E2,0.95,0.972,"mean 60 MW at PF 0.95, LF 0.972","Ch. 12, 14, 18",60.0,61.7284,64.9773,99.965,20.2891,3.0424,130.1073,288.3361,6.8952,3.5,411.4286,0.0
+S-N60,60 MW CONTINUOUS (LF = 1),0.93,1.0,60 MW continuous at PF 0.93,Ngesi Ch. 9 (AF-01),60.0,60.0,64.5161,99.2556,23.7135,2.5302,127.6672,291.7619,6.7659,3.5,411.4286,0.0
+S-O60,"60 MW ON LOAD, LF unchanged",0.93,0.95,on-load 60 MW at PF 0.93; mean = 60 x 0.95,Simphiwe Ch. 16,57.0,60.0,64.5161,99.2556,23.7135,2.5302,127.6672,291.7619,6.7659,3.5,390.8571,0.0
+P1,Hot charging only (~500 C),0.93,0.95,existing electrical + SEC from hot charging,Ch. 12,57.4275,60.45,65.0,100.0,23.8914,2.5302,128.3047,292.4894,6.7997,3.15,437.5429,0.0
+C1,60 MW mean + hot charging (selected),0.95,0.972,S-B electrical + SEC from hot charging,"Ch. 12, 14, 15, 18",60.0,61.7284,64.9773,99.965,20.2891,3.0424,130.1073,288.3361,6.8952,3.15,457.1429,1.0
