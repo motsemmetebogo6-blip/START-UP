@@ -1,0 +1,154 @@
+{
+ "metrics": {
+  "Tmax": 2550.3530719714,
+  "T_axis_tip": 1942.170978594992,
+  "T_axis_roof": 2365.819694947094,
+  "T_surf_stock": 767.9139393158327,
+  "z500": 9.936843247234467,
+  "z800": 9.632317081842922,
+  "joule_MW": 2.7431987653124446,
+  "from_bath_burden_MW": -1.459483074962172,
+  "losses_MW": 1.2837156903502573,
+  "balance_residual_W": 1.5133991837501526e-08,
+  "loss_split_MW": {
+   "s": 0.09858394612565959,
+   "e": 1.1850147498192063,
+   "n": 0.00011699440539136792
+  }
+ },
+ "analytic": {
+  "numerical": 1101.041705416791,
+  "exact": 1101.0416666666667
+ },
+ "mesh": [
+  [
+   0.5,
+   1440,
+   2551.4,
+   2381.5,
+   9.941,
+   2.7353,
+   -1.45
+  ],
+  [
+   1.0,
+   5712,
+   2550.4,
+   2365.8,
+   9.937,
+   2.7432,
+   -1.4595
+  ],
+  [
+   2.0,
+   22992,
+   2550.3,
+   2357.6,
+   9.933,
+   2.7452,
+   -1.464
+  ]
+ ],
+ "inputs": {
+  "T_slag_C": [
+   1800.05,
+   "DATA",
+   "Ferrochrome Data Workbook, Slag sheet, in-furnace temperature, mean"
+  ],
+  "T_metal_C": [
+   1732.2,
+   "DERIVED",
+   "Alloy liquidus 1549.95 + superheat 182.25 (Metal sheet)"
+  ],
+  "I_electrode_kA": [
+   130.107,
+   "DERIVED",
+   "Westly estimate at C1, C3 = 8.33 (A-18); not measured"
+  ],
+  "rho_electrode_uOhm_m": [
+   30.0,
+   "ASSUMED",
+   "Baked Soderberg carbon at operating temperature, low end of the typical range; replace with supplier data"
+  ],
+  "k_electrode": [
+   20.0,
+   "ASSUMED",
+   "W/(m K) baked carbon electrode, typical range 5 to 25"
+  ],
+  "k_lining": [
+   3.0,
+   "ASSUMED",
+   "W/(m K) magnesia-chrome type refractory, typical range 2 to 5"
+  ],
+  "k_burden": [
+   1.5,
+   "ASSUMED",
+   "W/(m K) effective, porous charge including radiation, typical range 0.5 to 3"
+  ],
+  "h_bottom": [
+   15.0,
+   "ASSUMED",
+   "W/(m2 K) shell bottom to ambient"
+  ],
+  "T_ambient_C": [
+   25.0,
+   "ASSUMED",
+   ""
+  ],
+  "h_freeboard": [
+   150.0,
+   "ASSUMED",
+   "W/(m2 K) electrode and burden surface to furnace gas (convection plus radiation)"
+  ],
+  "T_gas_C": [
+   700.0,
+   "ASSUMED",
+   "Furnace gas temperature in the freeboard"
+  ],
+  "h_above_roof": [
+   30.0,
+   "ASSUMED",
+   "W/(m2 K) electrode surface above the roof to ambient"
+  ],
+  "burden_profile_exponent": [
+   2.0,
+   "ASSUMED",
+   "Charge temperature T_gas + (T_slag - T_gas) * s^n, s = fraction of the burden depth above the bath"
+  ],
+  "z_shoe_top": [
+   9.6,
+   "ASSUMED",
+   "m: top of the contact-shoe band (current enters the electrode here); band is 1.0 m deep"
+  ],
+  "h_shoe": [
+   300.0,
+   "ASSUMED",
+   "W/(m2 K) water-cooled contact shoes on the electrode surface"
+  ],
+  "T_shoe_water_C": [
+   60.0,
+   "ASSUMED",
+   ""
+  ],
+  "h_above_shoes": [
+   15.0,
+   "ASSUMED",
+   "W/(m2 K) electrode surface above the shoes to ambient air"
+  ],
+  "T_air_C": [
+   40.0,
+   "ASSUMED",
+   ""
+  ],
+  "z_col_top": [
+   13.6,
+   "ASSUMED",
+   "m: top of the modelled electrode column (4 m above the support plate)"
+  ],
+  "T_above_roof_C": [
+   60.0,
+   "ASSUMED",
+   "Air around the electrode above the roof"
+  ]
+ }
+}

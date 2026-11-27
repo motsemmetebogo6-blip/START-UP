@@ -1,0 +1,165 @@
+{
+ "parameters": {
+  "D_shell_in": 13.7,
+  "D_hearth": 10.88,
+  "D_e": 1.55,
+  "PCD": 4.19,
+  "t_lining": 1.41,
+  "t_steel": 0.03,
+  "t_floor": 1.41,
+  "H_cavity": 7.5,
+  "t_roof": 0.6,
+  "z_metal": 0.5,
+  "z_bath": 2.2,
+  "z_stock": 6.0,
+  "z_tip": 1.5,
+  "D_plate": 9.6,
+  "t_plate": 0.5,
+  "h_stub": 1.0,
+  "offset": 1.2,
+  "L_tube": 8.0,
+  "wall_e": 0.2,
+  "D_tap_o": 1.2,
+  "D_tap_i": 0.8,
+  "L_tap": 2.0,
+  "z_tap": 0.3,
+  "tap_angles": [
+   -145.0,
+   -35.0
+  ],
+  "e_angles": [
+   0.0,
+   120.0,
+   240.0
+  ],
+  "R_shell_o": 6.88,
+  "R_shell_i": 6.85,
+  "R_hearth": 5.44,
+  "z_bottom": -1.44,
+  "z_roof_u": 7.5,
+  "z_roof_t": 8.1,
+  "z_plate_b": 9.1,
+  "z_plate_t": 9.6,
+  "z_tube_top": 17.6,
+  "H_total": 19.040000000000003,
+  "H_body": 9.54,
+  "R_e_axis": 2.095,
+  "R_tube_axis": 3.295
+ },
+ "tags": {
+  "D_shell_in": [
+   "DATA",
+   "Shell inner diameter, Chapter 3 (existing furnace configuration)"
+  ],
+  "D_hearth": [
+   "DATA",
+   "Hearth diameter inside the lining, Chapter 3"
+  ],
+  "D_e": [
+   "DATA",
+   "Soderberg electrode diameter, Chapter 4 (A-16)"
+  ],
+  "PCD": [
+   "DATA",
+   "Electrode pitch circle diameter, 2.70 x 1.55 (A-19)"
+  ],
+  "t_lining": [
+   "DERIVED",
+   "(13.70 - 10.88)/2: lining and ramming between shell and hearth"
+  ],
+  "t_steel": [
+   "ASSUMED",
+   "Steel shell plate thickness"
+  ],
+  "t_floor": [
+   "ASSUMED",
+   "Floor lining taken equal to the wall lining"
+  ],
+  "H_cavity": [
+   "PICTURE",
+   "Inside height from hearth floor to roof underside (overall height 9.5 m from the picture)"
+  ],
+  "t_roof": [
+   "ASSUMED",
+   "Roof slab thickness"
+  ],
+  "z_metal": [
+   "ASSUMED",
+   "Top of the metal pad above the hearth floor"
+  ],
+  "z_bath": [
+   "ASSUMED",
+   "Top of the slag layer above the hearth floor"
+  ],
+  "z_stock": [
+   "ASSUMED",
+   "Burden stock line above the hearth floor"
+  ],
+  "z_tip": [
+   "ASSUMED",
+   "Electrode tip height above the hearth floor (immersed in the slag layer)"
+  ],
+  "D_plate": [
+   "PICTURE",
+   "Electrode support plate diameter, 0.70 of the shell diameter"
+  ],
+  "t_plate": [
+   "PICTURE",
+   "Electrode support plate thickness"
+  ],
+  "h_stub": [
+   "PICTURE",
+   "Stub height between roof top and support plate"
+  ],
+  "offset": [
+   "PICTURE",
+   "Horizontal offset of each vertical electrode tube from its stub (outward)"
+  ],
+  "L_tube": [
+   "PICTURE",
+   "Vertical electrode tube length above the support plate"
+  ],
+  "wall_e": [
+   "PICTURE",
+   "Electrode tube wall thickness (hollow casing in the picture)"
+  ],
+  "D_tap_o": [
+   "PICTURE",
+   "Tap pipe outer diameter"
+  ],
+  "D_tap_i": [
+   "PICTURE",
+   "Tap pipe bore"
+  ],
+  "L_tap": [
+   "PICTURE",
+   "Tap pipe projection beyond the shell"
+  ],
+  "z_tap": [
+   "PICTURE",
+   "Tap pipe axis height above the hearth floor"
+  ],
+  "tap_angles": [
+   "PICTURE",
+   "Tap pipe azimuths in plan (x to the right, y to the back)"
+  ],
+  "e_angles": [
+   "PICTURE",
+   "Electrode azimuths in plan"
+  ]
+ },
+ "checks": {
+  "lining_volume_cad_m3": 616.1526346271153,
+  "lining_volume_analytic_m3": 616.1526346271154,
+  "n_parts": 21,
+  "fused_volume_m3": 1341.1612420734832,
+  "bbox": [
+   -7.618378594002011,
+   7.618378594002,
+   -6.8800324822080645,
+   6.880032482208063,
+   -1.4421709100424471,
+   17.600255703551397
+  ]
+ }
+}

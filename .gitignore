@@ -2,3 +2,4 @@ __pycache__/
 .pytest_cache/
 deliverables/*.zip
 __pycache__/
+furnace_cad/octave_io/
